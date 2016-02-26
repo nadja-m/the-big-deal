@@ -386,12 +386,12 @@ function main() {
         .append('pattern')
           .attr('id', 'diagonalHatch')
           .attr('patternUnits', 'userSpaceOnUse')
-          .attr('width', 4)
-          .attr('height', 4)
+          .attr('width', 8)
+          .attr('height', 8)
         .append('path')
-          .attr('d', 'M-1,1 l2,-2 M0,4 l4,-4 M3,5 l2,-2')
+          .attr('d', 'M-1,1 l2,-2 M0,8 l8,-8 M7.5,8.6 l2,-2')
           .attr('stroke', '#F6EAA4')
-          .attr('stroke-width', 1);
+          .attr('stroke-width', 2);
 
           var Usa = raster
             .append("g")
