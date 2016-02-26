@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>THE BIG DEAL</title>
+      <script src="http://code.jquery.com/jquery-2.1.4.min.js" charset="utf-8"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+      <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+      <script src="js/main_ila.js" charset="utf-8"></script>
+      <script src="js/main_all.js" charset="utf-8"></script>
+      <script src="js/javascript.js" type="text/javascript"></script>
+      <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/plugins/ScrollToPlugin.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js" charset="utf-8"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js" charset="utf-8"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js" charset="utf-8"></script>
+      <script src="https://use.typekit.net/qzf2jwe.js"></script>
+      <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+      <link rel="stylesheet" href="css/style.css" media="screen" charset="utf-8">
+    </head>
+    <body>
+
+
+      <div class="page section start">
+        <img id="title" src="img/titel.svg">
+          <div class=titleStart> THE BIG DEAL
+          </div>
+      </div>
+
+      <div class="page section description">
+        <div class="text">
+          IN THE PAST 5 YEARS THE NUMBERS OF PERSONS WHO HAVE BEEN FORCED TO LEAVE THEIR HOMES HAS CONTINUED TO GROW.
+          WAR, PERSECUTION AND CONFLICTS LIE BEHIND THIS TRENDS. WE WANTED TO SHOW WHAT THE CATALYSTS FOR THESE CONFLICTS ARE.
+          WEAPON EXPORT AND IMPORT FUEL THE CONFLICTS AND THUS SUSTAIN THE WARS.
+          IT IS A COMPLEX AND DYNAMIC TOPIC, THEREFORE WEAPONS ALONE AREN’T THE ONLY CATALYST.
+        </div>
+        <div class="triggerImport1"></div>
+        <div class="triggerImportZoom"></div>
+      </div>
+
+      <div class="page section import1">
+
+        <img src="img/legende.png" class="legende" id="legende">
+          <div class="titleImport" id="titleImport"> ORIGIN OF THE REFUGEES</div>
+          <div class="titleImportBreak" id="titleImportBreak"> /<br/> </div>
+          <div class="titleImport1" id="titleImport1"> import countries </div>
+          <div id="vis">
+          </div>
+        <script type="text/javascript">
+            main();
+        </script>
+
+        <div class="page section importZoom">
+        <div id="vis1">
+        </div>
+        <script type="text/javascript">
+            main_all();
+        </script>
+      </div>
+
+      </div>
+
+      <!-- <div class="page section import2">
+        <div id=titleImport2> origin of the refugees /<br/> Import countries
+        </div>
+        <div id="vis1">
+        </div>
+        <script type="text/javascript">
+            main_all();
+        </script>
+      </div> -->
+
+      <div class="page section description2">
+        <div class="text2">
+          HAVING SEEN THE IMPORT COUNTRIES IN CONTRAST TO THE CONFLICT AREAS IN THE WORLD, THE QUESTION AROSE WHERE THE WEAPONS COME FROM.
+          MORE IMPORTANTLY WE WANTED TO KNOW HOW THE TOP EXPORTERS ACT IN THE REFUGEE MATTER.
+        </div>
+        <div class="triggerExport1"></div>
+        <div class="triggerTitleExport"></div>
+      </div>
+
+      <div class="page section export1">
+        <!-- <div id="vis2">
+        </div> -->
+          <div class="titleExport">WHERE DO THE KALASHNIKOVS COME FROM?</div>
+          <script type="text/javascript">
+            export1();
+          </script>
+      </div>
+
+      <div class="page section description3">
+        <div class="text3">
+          In order to set the weapon Import and export in context with the refugee matter, we chose to work with the kalashnikov as symbolic representation.
+         <br>The Kalashnikov is the most commonly used weapon worldwide as it is very durable. The average price for the AK47 is about 500 USD.
+        </div>
+        <div class="triggerExport2"></div>
+        <div class="triggerTitleExport2"></div>
+     </div>
+
+      <div class="titleExport2" id="titleExport2">HOW MANY KALASHNIKOVS ARE EXPORTED PER ADMITTED REFUGEE?</div>
+
+      <div class="page section export2">
+
+        <div id="export-div">
+          <span id="export-tooltip">
+        </span>
+        <script type="text/javascript">
+            bilder();
+        </script>
+        </div>
+
+        <div class="popup" id="popup">
+
+           <div id="usa" class=" armsImg">
+             <h2>usa</h2>
+             <h3>76 Kalaschnikovs / </br>
+               1 refugee</h3>
+               <h4>refugee / 1000 inhabitant</h4>
+               <h5>0.8</h5>
+             <div><img class = "refugee_icon" src="img/refugee_icon.svg" width="45px"></div>
+             <div class="circles"></div>
+           </div>
+
+           <div id="russia" class=" armsImg">
+             <h2>Russia</h2>
+             <h3>51 Kalaschnikovs / </br>
+               1 refugee</h3>
+               <h4>refugee / 1000 inhabitant</h4>
+               <h5>1.6</h5>
+             <div><img class = "refugee_icon" src="img/refugee_icon.svg" width="45px"></div>
+             <div class="circles"></div>
+           </div>
+
+          <div id="uk" class=" armsImg">
+            <h2>United Kingdom</h2>
+            <h3>29 Kalaschnikovs / </br>
+              1 refugee</h3>
+              <h4>refugee / 1000 inhabitant</h4>
+              <h5>1.8</h5>
+            <div><img class = "refugee_icon" src="img/refugee_icon.svg" width="45px"></div>
+            <div class="circles"></div></div>
+
+          <div id="france" class=" armsImg">
+            <h2>France</h2>
+            <h3>16 Kalaschnikovs / </br>
+              1 refugee</h3>
+              <h4>refugee / 1000 inhabitant</h4>
+              <h5>3.9</h5>
+            <div><img class = "refugee_icon" src="img/refugee_icon.svg" width="45px"></div>
+            <div class="circles"></div></div>
+
+          <div id="germany" class=" armsImg">
+            <h2>Germany</h2>
+            <h3>11 Kalaschnikovs / </br>
+              1 refugee</h3>
+              <h4>refugee / 1000 inhabitant</h4>
+              <h5>2.7</h5>
+            <div><img class = "refugee_icon" src="img/refugee_icon.svg" width="45px"></div>
+            <div class="circles"></div></div>
+
+          <div id="spain" class=" armsImg">
+            <h2>Spain</h2>
+            <h3>387 Kalaschnikovs / </br>
+              1 refugee</h3>
+              <h4>refugee / 1000 inhabitant</h4>
+              <h5>0.1</h5>
+            <div><img class = "refugee_icon" src="img/refugee_icon.svg" width="45px"></div>
+            <div class="circles"></div></div>
+
+          <div id="ukraine" class=" armsImg">
+            <h2>ukraine</h2>
+            <h3>418 Kalaschnikovs / </br>
+              1 refugee</h3>
+              <h4>refugee / 1000 inhabitant</h4>
+              <h5>0.1</h5>
+            <img class = "refugee_icon" src="img/refugee_icon.svg" width="45px"/>
+            <div class="circles"></div>
+          </div>
+
+          <div id="china" class=" armsImg">
+            <h2>CHINA</h2>
+            <h3>7 Kalaschnikovs / </br>
+              1 refugee</h3>
+              <h4>refugee / 1000 inhabitant</h4>
+              <h5>0.2</h5>
+            <div><img class = "refugee_icon" src="img/refugee_icon.svg" width="45px"></div>
+            <div class="circles"></div></div>
+
+           <div id="israel" class=" armsImg">
+             <h2>Israel</h2>
+             <h3>42 Kalaschnikovs / </br>
+               1 refugee</h3>
+               <h4>refugee / 1000 inhabitant</h4>
+               <h5>4.8</h5>
+             <div><img class = "refugee_icon" src="img/refugee_icon.svg" width="45px"></div>
+             <div class="circles"></div></div>
+
+           <div id="italy" class=" armsImg">
+             <h2>ITALY</h2>
+             <h3>17 Kalaschnikovs / </br>
+               1 refugee</h3>
+               <h4>refugee / 1000 inhabitant</h4>
+               <h5>1.6</h5>
+             <div><img class = "refugee_icon" src="img/refugee_icon.svg" width="45px"></div>
+             <div class="circles"></div></div>
+
+           <div onclick="closeall()" id="xButton"></div>
+          </div>
+
+       <script type="text/javascript">
+         visibility();
+       </script>
+       <a href="DataInfo.html" class="infos" target="_blank"> Data Information and Sources </a>
+      </div>
+      <a href="#" class="scrollToTop"></a>
+    </body>
+
+
+  </html>
