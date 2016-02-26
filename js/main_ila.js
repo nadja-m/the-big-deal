@@ -26,7 +26,7 @@ function export1() {
         .style("position", "absolute")
         .style("z-index", "10")
         .html(function(d) {
-          return "<strong>" + d.Country + ":</strong> <span style='color:red'>" + d.Export + "Mio $</span>";
+          return "<strong>" + d.Country + ":</strong> <span style='color:white'>" + d.Export + "Mio $</span>";
           // return tip.style("top", (event.pageY-10) + "px")
           //        tip.style("left", (event.pageX+10) + "px");
         });
