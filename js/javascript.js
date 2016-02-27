@@ -2,7 +2,7 @@ d3.xml("img/world_map.svg", "image/svg+xml", function(xml) {
       document.getElementById("export-div").appendChild(xml.documentElement);
     });
 
-d3.xml("img/export_countrys_v4.svg", "image/svg+xml", function(xml) {
+d3.xml("img/export_countrys_v5.svg", "image/svg+xml", function(xml) {
               document.getElementById("export-div").appendChild(xml.documentElement);
             });
 
@@ -16,7 +16,7 @@ var data = {
   "spain" : 387,
   "ukraine" : 418,
   "china" : 7,
-  "israel" : 42,
+  "swiss" : 11,
   "italy" : 17
 }
 
@@ -56,7 +56,7 @@ function closeall(){
   document.getElementById('spain').style.display = 'none';
   document.getElementById('ukraine').style.display = 'none';
   document.getElementById('china').style.display = 'none';
-  document.getElementById('israel').style.display = 'none';
+  document.getElementById('swiss').style.display = 'none';
   document.getElementById('italy').style.display = 'none';
 
 }
