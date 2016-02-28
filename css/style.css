@@ -152,10 +152,17 @@ p {
   z-index: 1;
 }
 
-.legende {
+.legende1 {
   position: absolute;
   width: 27%;
   margin: 550px 100px 0 50px;
+  z-index: 1;
+}
+
+.legende2 {
+  position: absolute;
+  width: 27%;
+  margin: 740px 100px 0 50px;
   z-index: 1;
 }
 
