@@ -953,7 +953,7 @@ Myanmar.append("path")
           .on("progress", function (j) {
             if(j.progress > 0) {
               importZoom();
-                document.getElementById('clickText').style.display = 'none';
+              document.getElementById('clickText').style.display = 'none';
               // document.getElementById('vis').style.opacity = 0;
             }
             else {
