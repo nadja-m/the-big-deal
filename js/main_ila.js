@@ -118,6 +118,7 @@ function export1() {
            duration: 20
          })
          .addTo(controller2)
+         .addIndicators()
          .on("progress", function (e) {
            if(e.progress > 0) {
              dropsFall();
@@ -135,7 +136,6 @@ function export1() {
         })
         .setPin(".titleExport")
         .addTo(controller1)
-        // .addIndicators()
 }
 
 // function showTooltip(exportGraph){
