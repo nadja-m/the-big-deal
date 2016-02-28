@@ -1,7 +1,7 @@
 /*general*/
 
 body {
-  margin: 0;
+  margin: 0, auto;  /* auto sollte bewirken, dass die Seite eingemittet ist */
   padding: 0;
   box-sizing: border-box;
   background-image: url(../img/Paper.png);
