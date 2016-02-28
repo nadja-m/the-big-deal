@@ -19,6 +19,12 @@ $(document).ready(function(){
 	//show scroller after some time
 	$('.scroller').delay(2000).fadeIn();
 
+	//initialize scroll
+	$('.scroller').click(function(){
+		$('html, body').animate({scrollTop : 1000},800);
+		return false;
+	});
+
 });
 
 
