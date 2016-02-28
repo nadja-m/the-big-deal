@@ -95,7 +95,7 @@ p {
   font-weight: 800;
   color: rgb(237,28,36);
   position: absolute;
-  margin: 600px 300px 0 50px;
+  margin: 0 300px 0 50px;
   z-index: 2;
 }
 
@@ -105,7 +105,7 @@ p {
   font-weight: 800;
   color: rgb(237,28,36);
   position: absolute;
-  margin: 600px 300px 0 740px;
+  margin: 600px 300px 0 800px;
   z-index: 2;
 }
 
@@ -288,6 +288,12 @@ h5{
 .triggerImportZoom {
   position: relative;
   top: 300px;
+  right: 0px;
+}
+
+.triggerImportTitle {
+  position: relative;
+  top: -200px;
   right: 0px;
 }
 
