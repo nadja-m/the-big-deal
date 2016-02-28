@@ -35,9 +35,6 @@ body {
   background-image: url(../img/arrow_hover.png);
 }
 
-
-
-
 /*text*/
 
 .infos {
@@ -255,6 +252,21 @@ h5{
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
+}
+
+.scroller {
+  width:40px;
+	height:20px;
+	position:fixed;
+  padding-top: 39px;
+	top:795px;
+	display:none;
+  transform: rotate(90deg);
+  background-image: url(../img/arrow.png);
+}
+
+.scroller:hover{
+  background-image: url(../img/arrow_hover.png);
 }
 
 /*import section 1*/
