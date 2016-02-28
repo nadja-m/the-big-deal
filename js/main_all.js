@@ -619,7 +619,9 @@ function main_all() {
           document.getElementById('titleImport1').style.display = 'none';
           document.getElementById('titleImportBreak').style.display = 'none';
           document.getElementById('vis').style.opacity = 0;
-          document.getElementById('legende').style.display = 'none';
+          document.getElementById('legende1').style.display = 'none';
+					document.getElementById('legende2').style.display = 'none';
+
 
           g
             .transition()
