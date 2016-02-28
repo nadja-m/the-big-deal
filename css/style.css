@@ -91,7 +91,7 @@ p {
 
 .titleImport {
   font-family: "lft-etica",sans-serif;
-  font-size: 55px;
+  font-size: 40px;
   font-weight: 800;
   color: rgb(237,28,36);
   position: absolute;
@@ -101,7 +101,7 @@ p {
 
 .titleImportBreak {
   font-family: "lft-etica",sans-serif;
-  font-size: 55px;
+  font-size: 40px;
   font-weight: 800;
   color: rgb(237,28,36);
   position: absolute;
@@ -111,7 +111,7 @@ p {
 
 .titleImport1 {
   font-family: "lft-etica",sans-serif;
-  font-size: 55px;
+  font-size: 40px;
   font-weight: 800;
   color: rgb(237,28,36);
   position: absolute;
@@ -133,9 +133,9 @@ p {
 
 .titleExport {
   font-family: "lft-etica",sans-serif;
-  font-size: 58px;
-  font-weight: 800;
   font-size: 40px;
+  font-weight: 800;
+  /*font-size: 40px;*/
   color: rgb(237,28,36);
   margin: 0 100px 0 100px;
   position: absolute;
@@ -143,9 +143,9 @@ p {
 
 .titleExport2 {
   font-family: "lft-etica",sans-serif;
-  font-size: 58px;
-  font-weight: 800;
   font-size: 40px;
+  font-weight: 800;
+  /*font-size: 40px;*/
   color: rgb(237,28,36);
   margin: 200px 100px 0 100px;
   position: absolute;
