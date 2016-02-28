@@ -15,6 +15,10 @@ $(document).ready(function(){
 		return false;
 	});
 
+
+	//show scroller after some time
+	$('.scroller').delay(2000).fadeIn();
+
 });
 
 
