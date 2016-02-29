@@ -282,7 +282,7 @@ h5{
 }
 
 .scroller {
-  width:40px;
+  width:60px;
 	height:20px;
 	position:relative;
   padding-top: 39px;
@@ -291,12 +291,12 @@ h5{
   margin: auto;
   display: none;
   transform: rotate(180deg);
-  background-image: url(../img/arrow.png);
+  background-image: url(../img/arrow_fat.svg);
   z-index: 10;
 }
 
 .scroller:hover{
-  background-image: url(../img/arrow_hover.png);
+  opacity: 0.4;
 }
 
 /*import section 1*/
