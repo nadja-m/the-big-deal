@@ -118,6 +118,7 @@ function export1() {
            duration: 20
          })
          .addTo(controller2)
+        //  .addIndicators()
          .on("progress", function (e) {
            if(e.progress > 0) {
              dropsFall();
@@ -135,7 +136,6 @@ function export1() {
         })
         .setPin(".titleExport")
         .addTo(controller1)
-        // .addIndicators()
 }
 
 // function showTooltip(exportGraph){
@@ -359,6 +359,16 @@ function main() {
   });
 
 
+  var controller9 = new ScrollMagic.Controller();
+
+  new ScrollMagic.Scene({
+      triggerElement: '.triggerImportTitle', // the element to scroll inside
+      triggerHook: 'onLeave', // set trigger to top
+      duration: 600
+    })
+    .setPin(".titleImport")
+    .addTo(controller9)
+    .addIndicators();
 
   function drawVis() {
 
