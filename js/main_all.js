@@ -616,8 +616,8 @@ function main_all() {
           d3.event.preventDefault();
 
           document.getElementById('titleImport').style.display = 'none';
-          document.getElementById('titleImport1').style.display = 'none';
-          document.getElementById('titleImportBreak').style.display = 'none';
+          // document.getElementById('titleImport1').style.display = 'none';
+          // document.getElementById('titleImportBreak').style.display = 'none';
           document.getElementById('vis').style.opacity = 0;
           document.getElementById('legende1').style.display = 'none';
 					document.getElementById('legende2').style.display = 'none';

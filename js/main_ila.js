@@ -367,7 +367,7 @@ function main() {
       duration: 600
     })
     .setPin(".titleImport")
-    .addTo(controller9);
+    .addTo(controller9)
     // .addIndicators();
 
   // var controller10 = new ScrollMagic.Controller();
@@ -975,14 +975,14 @@ Myanmar.append("path")
           .on("progress", function (j) {
             if(j.progress > 0) {
               importZoom();
-              document.getElementById('clickText').style.display = 'none';
+              // document.getElementById('clickText').style.display = 'none';
               // document.getElementById('vis').style.opacity = 0;
             }
             else {
               hideimportZoom();
               document.getElementById('titleImport').style.display = 'block';
-              document.getElementById('titleImport1').style.display = 'block';
-              document.getElementById('titleImportBreak').style.display = 'block';
+              // document.getElementById('titleImport1').style.display = 'block';
+              // document.getElementById('titleImportBreak').style.display = 'block';
               document.getElementById('vis').style.opacity = 1;
               document.getElementById('legende').style.display = 'block';
 
