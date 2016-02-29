@@ -367,8 +367,19 @@ function main() {
       duration: 600
     })
     .setPin(".titleImport")
-    .addTo(controller9)
-    .addIndicators();
+    .addTo(controller9);
+    // .addIndicators();
+
+  // var controller10 = new ScrollMagic.Controller();
+  //
+  //   new ScrollMagic.Scene ({
+  //     triggerElement: '.triggerLegende1', // the element to scroll inside
+  //     triggerHook: 'onLeave', // set trigger to top
+  //     duration: 600
+  //   })
+  //   .setPin(".legende1")
+  //   .addTo(controller10);
+  //   })
 
   function drawVis() {
 
