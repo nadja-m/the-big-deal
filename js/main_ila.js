@@ -377,7 +377,7 @@ function main() {
   //     triggerHook: 'onLeave', // set trigger to top
   //     duration: 600
   //   })
-  //   .setPin(".legende1")
+  //   .setPin(".legendeTriggerd")
   //   .addTo(controller10);
 
 
