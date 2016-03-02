@@ -242,10 +242,10 @@ function main() {
   var wh = $(window).height();
 
   var svg = d3.select("#vis").append("svg")
-    .attr("viewBox", "0 0 " + ww + " " + wh)
-    .attr("preserveAspectRatio", "xMidYMid")
     .attr("width", ww)
-    .attr("height", wh);
+    .attr("height", wh)
+    .attr("viewBox", "0 0 " + ww + " " + wh)
+    .attr("preserveAspectRatio", "xMidYMid");
 
   $(window).resize(function(){
     svg
@@ -430,7 +430,10 @@ function main() {
             .attr("d",usaCountry)
             .attr('transform', 'scale(1) ')
             .attr('fill', 'url(#diagonalHatch)')
-            .style('stroke', '#F6EAA4');
+            .style('stroke', '#F6EAA4')
+            .on("mouseover", function(){return tooltip_2.style("visibility", "visible").text("USA") ;})
+            .on("mousemove", MouseMove)
+            .on("mouseout", MouseOut);
 
           var Turkey = raster
             .append("g")
@@ -447,7 +450,10 @@ function main() {
             .attr("d",turkeyCountry)
             .attr('transform', 'scale(1) ')
             .attr('fill', 'url(#diagonalHatch)')
-            .style('stroke', '#F6EAA4');
+            .style('stroke', '#F6EAA4')
+            .on("mouseover", function(){return tooltip_2.style("visibility", "visible").text("Turkey") ;})
+            .on("mousemove", MouseMove)
+            .on("mouseout", MouseOut);
 
           var SaudiArabia = raster
             .append("g")
@@ -465,7 +471,10 @@ function main() {
             .attr("d",saudiarabiaCountry)
             .attr('transform', 'scale(1) ')
             .attr('fill', 'url(#diagonalHatch)')
-            .style('stroke', '#F6EAA4');
+            .style('stroke', '#F6EAA4')
+            .on("mouseover", function(){return tooltip_2.style("visibility", "visible").text("Saudi Arabia") ;})
+            .on("mousemove", MouseMove)
+            .on("mouseout", MouseOut);
 
           var Uae = raster
             .append("g")
@@ -482,7 +491,10 @@ function main() {
             .attr("d",uaeCountry)
             .attr('transform', 'scale(1) ')
             .attr('fill', 'url(#diagonalHatch)')
-            .style('stroke', '#F6EAA4');
+            .style('stroke', '#F6EAA4')
+            .on("mouseover", function(){return tooltip_2.style("visibility", "visible").text("United Arabian Emirates") ;})
+            .on("mousemove", MouseMove)
+            .on("mouseout", MouseOut);
 
           var Pakistan = raster
             .append("g")
@@ -499,7 +511,10 @@ function main() {
             .attr("d",pakistanCountry)
             .attr('transform', 'scale(1) ')
             .attr('fill', 'url(#diagonalHatch)')
-            .style('stroke', '#F6EAA4');
+            .style('stroke', '#F6EAA4')
+            .on("mouseover", function(){return tooltip_2.style("visibility", "visible").text("Pakistan") ;})
+            .on("mousemove", MouseMove)
+            .on("mouseout", MouseOut);
 
           var Indien = raster
             .append("g")
@@ -516,7 +531,10 @@ function main() {
             .attr("d",indienCountry)
             .attr('transform', 'scale(1) ')
             .attr('fill', 'url(#diagonalHatch)')
-            .style('stroke', '#F6EAA4');
+            .style('stroke', '#F6EAA4')
+            .on("mouseover", function(){return tooltip_2.style("visibility", "visible").text("India") ;})
+            .on("mousemove", MouseMove)
+            .on("mouseout", MouseOut);
 
           var China = raster
             .append("g")
@@ -533,7 +551,10 @@ function main() {
             .attr("d",chinaCountry)
             .attr('transform', 'scale(1) ')
             .attr('fill', 'url(#diagonalHatch)')
-            .style('stroke', '#F6EAA4');
+            .style('stroke', '#F6EAA4')
+            .on("mouseover", function(){return tooltip_2.style("visibility", "visible").text("China") ;})
+            .on("mousemove", MouseMove)
+            .on("mouseout", MouseOut);
 
           var SuedKorea = raster
             .append("g")
@@ -550,7 +571,10 @@ function main() {
             .attr("d",suedkoreaCountry)
             .attr('transform', 'scale(1) ')
             .attr('fill', 'url(#diagonalHatch)')
-            .style('stroke', '#F6EAA4');
+            .style('stroke', '#F6EAA4')
+            .on("mouseover", function(){return tooltip_2.style("visibility", "visible").text("South Korea") ;})
+            .on("mousemove", MouseMove)
+            .on("mouseout", MouseOut);
 
           var Australia = raster
             .append("g")
@@ -567,7 +591,10 @@ function main() {
             .attr("d",australiaCountry)
             .attr('transform', 'scale(1) ')
             .attr('fill', 'url(#diagonalHatch)')
-            .style('stroke', '#F6EAA4');
+            .style('stroke', '#F6EAA4')
+            .on("mouseover", function(){return tooltip_2.style("visibility", "visible").text("Australia") ;})
+            .on("mousemove", MouseMove)
+            .on("mouseout", MouseOut);
 
 
 //
