@@ -617,6 +617,7 @@ Syrien.append("circle")
   .attr("r", 30)
   .attr('transform', 'translate(10,10)')
   .style('fill', '#ED1C24')
+  .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Syria <br> 3.8 Mio Refugees") ;})
   .on("mousemove", MouseMove)
   .on("mouseout", MouseOut);
 
@@ -636,7 +637,10 @@ var Irak = g
 Irak.append("circle")
   .attr("r", 7)
   .attr('transform', 'translate(25,25)')
-  .style('fill', '#ED1C24');
+  .style('fill', '#ED1C24')
+  .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Irak <br> 0.3 Mio Refugees")  ;})
+  .on("mousemove", MouseMove)
+  .on("mouseout", MouseOut);
 
 
 Irak.append("path")
@@ -655,14 +659,14 @@ Somalia.append("circle")
   .attr("r", 12)
   .attr('transform', 'translate(39,13)')
   .style('fill', '#ED1C24')
-  .on("mouseover", function(){return tooltip_2.style("visibility", "visible").text("Somalia") ;})
+  .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Somalia <br> 1.1 Mio Refugees") ;})
   .on("mousemove", MouseMove)
   .on("mouseout", MouseOut);
 
 Somalia.append("path")
 .attr("d", somaliaCountry)
 .attr('transform', 'translate(35,20) scale(0)')
-.on("mouseover", function(){return tooltip_2.style("visibility", "visible").text("Somalia") ;})
+.on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Somalia <br> 1.1 Mio Refugees") ;})
 .on("mousemove", MouseMove)
 .on("mouseout", MouseOut);
 
@@ -675,14 +679,14 @@ Eritrea.append("circle")
   .attr("r", 7)
   .attr('transform', 'translate(0,0)')
   .style('fill', '#ED1C24')
-  .on("mouseover", function(){return tooltip_2.style("visibility", "visible").text("Eritrea") ;})
+  .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Eritrea <br> 0.3 Mio Refugees") ;})
   .on("mousemove", MouseMove)
   .on("mouseout", MouseOut);
 
 Eritrea.append("path")
 .attr("d", eritreaCountry)
 .attr('transform', 'scale(0)')
-.on("mouseover", function(){return tooltip_2.style("visibility", "visible").text("Eritrea") ;})
+.on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Eritrea <br> 0.3 Mio Refugees") ;})
 .on("mousemove", MouseMove)
 .on("mouseout", MouseOut);
 
@@ -695,14 +699,14 @@ Sudan.append("circle")
   .attr("r", 9)
   .attr('transform', 'translate(39,13)')
   .style('fill', '#ED1C24')
-  .on("mouseover", function(){return tooltip_2.style("visibility", "visible").text("Sudan") ;})
+  .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Sudan <br> 0.6 Mio Refugees") ;})
   .on("mousemove", MouseMove)
   .on("mouseout", MouseOut);
 
 Sudan.append("path")
 .attr("d", sudanCountry)
 .attr('transform', 'translate(30,8) scale(0)')
-.on("mouseover", function(){return tooltip_2.style("visibility", "visible").text("Sudan") ;})
+.on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Sudan <br> 0.6 Mio Refugees") ;})
 .on("mousemove", MouseMove)
 .on("mouseout", MouseOut);
 
@@ -715,14 +719,14 @@ Southsudan.append("circle")
   .attr("r", 9)
   .attr('transform', 'translate(39,13)')
   .style('fill', '#ED1C24')
-  .on("mouseover", function(){return tooltip_2.style("visibility", "visible").text("South Sudan") ;})
+  .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("South Sudan <br> 0.6 Mio Refugees") ;})
   .on("mousemove", MouseMove)
   .on("mouseout", MouseOut);
 
 Southsudan.append("path")
 .attr("d", southsudanCountry)
 .attr('transform', 'translate(30,14) scale(0)')
-.on("mouseover", function(){return tooltip_2.style("visibility", "visible").text("South Sudan") ;})
+.on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("South Sudan <br> 0.6 Mio Refugees") ;})
 .on("mousemove", MouseMove)
 .on("mouseout", MouseOut);
 
@@ -735,37 +739,34 @@ ZentralafrikanischeRepublik.append("circle")
   .attr("r", 7.5)
   .attr('transform', 'translate(39,13)')
   .style('fill', '#ED1C24')
-  .on("mouseover", function(){return tooltip_2.style("visibility", "visible").text("Central African Republic") ;})
+  .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Central African Republic <br> 0.4 Mio Refugees") ;})
   .on("mousemove", MouseMove)
   .on("mouseout", MouseOut);
 
 ZentralafrikanischeRepublik.append("path")
 .attr("d", zentralafrikanischeRepublikCountry)
 .attr('transform', 'translate(30,14) scale(0)')
-.on("mouseover", function(){return tooltip_2.style("visibility", "visible").text("Central African Republic") ;})
+.on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Central African Republic <br> 0.4 Mio Refugees") ;})
 .on("mousemove", MouseMove)
 .on("mouseout", MouseOut);
 
 var Congo = g
   .append("g")
   .attr('transform', 'translate(782, 532)')
-  .style('fill', '#ED1C24')
-  .on("mouseover", function(){return tooltip.style("visibility", "visible").text("Congo") ;})
-  .on("mousemove", MouseMove)
-  .on("mouseout", MouseOut);
+  .style('fill', '#ED1C24');
 
 Congo.append("circle")
   .attr("r", 8)
   .attr('transform', 'translate(39,13)')
   .style('fill', '#ED1C24')
-  .on("mouseover", function(){return tooltip.style("visibility", "visible").text("Congo") ;})
+  .on("mouseover", function(){return tooltip.style("visibility", "visible").html("Congo <br> 0.5 Mio Refugees") ;})
   .on("mousemove", MouseMove)
   .on("mouseout", MouseOut);
 
 Congo.append("path")
 .attr("d", congoCountry)
 .attr('transform', 'translate(31,6) scale(0)')
-.on("mouseover", function(){return tooltip.style("visibility", "visible").text("Congo") ;})
+.on("mouseover", function(){return tooltip.style("visibility", "visible").html("Congo <br> 0.5 Mio Refugees") ;})
 .on("mousemove", MouseMove)
 .on("mouseout", MouseOut);
 
@@ -778,14 +779,14 @@ Afghanistan.append("circle")
   .attr("r", 22)
   .attr('transform', 'translate(39,13)')
   .style('fill', '#ED1C24')
-  .on("mouseover", function(){return tooltip.style("visibility", "visible").text("Afghanistan") ;})
+  .on("mouseover", function(){return tooltip.style("visibility", "visible").html("Afghanistan <br> 2.6 Mio Refugees") ;})
   .on("mousemove", MouseMove)
   .on("mouseout", MouseOut);
 
 Afghanistan.append("path")
 .attr("d", afghanistanCountry)
 .attr('transform', 'translate(31,6) scale(0)')
-.on("mouseover", function(){return tooltip.style("visibility", "visible").text("Afghanistan") ;})
+.on("mouseover", function(){return tooltip.style("visibility", "visible").html("Afghanistan <br> 2.6 Mio Refugees") ;})
 .on("mousemove", MouseMove)
 .on("mouseout", MouseOut);
 
@@ -798,14 +799,14 @@ Myanmar.append("circle")
   .attr("r", 8)
   .attr('transform', 'translate(24,45)')
   .style('fill', '#ED1C24')
-  .on("mouseover", function(){return tooltip.style("visibility", "visible").text("Myanmar") ;})
+  .on("mouseover", function(){return tooltip.style("visibility", "visible").html("Myanmar <br> 0.5 Mio Refugees") ;})
   .on("mousemove", MouseMove)
   .on("mouseout", MouseOut);
 
 Myanmar.append("path")
 .attr("d", myanmarCountry)
 .attr('transform', 'translate(28,36) scale(0)')
-.on("mouseover", function(){return tooltip.style("visibility", "visible").text("Myanmar") ;})
+.on("mouseover", function(){return tooltip.style("visibility", "visible").html("Myanmar <br> 0.5 Mio Refugees") ;})
 .on("mousemove", MouseMove)
 .on("mouseout", MouseOut);
 
