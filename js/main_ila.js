@@ -759,14 +759,14 @@ Congo.append("circle")
   .attr("r", 8)
   .attr('transform', 'translate(39,13)')
   .style('fill', '#ED1C24')
-  .on("mouseover", function(){return tooltip.style("visibility", "visible").html("Congo <br> 0.5 Mio Refugees") ;})
+  .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Congo <br> 0.5 Mio Refugees") ;})
   .on("mousemove", MouseMove)
   .on("mouseout", MouseOut);
 
 Congo.append("path")
 .attr("d", congoCountry)
 .attr('transform', 'translate(31,6) scale(0)')
-.on("mouseover", function(){return tooltip.style("visibility", "visible").html("Congo <br> 0.5 Mio Refugees") ;})
+.on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Congo <br> 0.5 Mio Refugees") ;})
 .on("mousemove", MouseMove)
 .on("mouseout", MouseOut);
 
