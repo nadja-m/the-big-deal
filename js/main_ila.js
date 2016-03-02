@@ -617,14 +617,13 @@ Syrien.append("circle")
   .attr("r", 30)
   .attr('transform', 'translate(10,10)')
   .style('fill', '#ED1C24')
-  .on("mouseover", function(){return tooltip_2.style("visibility", "visible").text("Syria") ;})
   .on("mousemove", MouseMove)
   .on("mouseout", MouseOut);
 
 Syrien.append("path")
 .attr("d",syriaCountry)
 .attr('transform', 'scale(0) ')
-.on("mouseover", function(){return tooltip_2.style("visibility", "visible").text("Syria") ;})
+.on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Syria <br> 3.8 Mio Refugees") ;})
 .on("mousemove", MouseMove)
 .on("mouseout", MouseOut);
 
@@ -637,15 +636,13 @@ var Irak = g
 Irak.append("circle")
   .attr("r", 7)
   .attr('transform', 'translate(25,25)')
-  .style('fill', '#ED1C24')
-  .on("mouseover", function(){return tooltip_2.style("visibility", "visible").text("Irak") ;})
-  .on("mousemove", MouseMove)
-  .on("mouseout", MouseOut);
+  .style('fill', '#ED1C24');
+
 
 Irak.append("path")
 .attr("d", irakCountry)
 .attr('transform', 'translate(26,20) scale(0)')
-.on("mouseover", function(){return tooltip_2.style("visibility", "visible").text("Irak") ;})
+.on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Irak <br> 0.3 Mio Refugees")  ;})
 .on("mousemove", MouseMove)
 .on("mouseout", MouseOut);
 
