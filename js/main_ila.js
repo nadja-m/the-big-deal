@@ -249,7 +249,7 @@ function main() {
   var svg = d3.select("#vis").append("svg")
     .attr("width", ww)
     .attr("height", wh)
-    .attr("viewBox", "0 0 " + ww + " " + wh)
+    .attr("viewBox", "0 0 ww wh")             //über die Viewbox kann man das SVG in ein neues Koordinatensystems setzen ohne, dass das Koordinatensystem des svgs verändert wird.
     .attr("preserveAspectRatio", "xMidYMid");
 
   $(window).resize(function(){
