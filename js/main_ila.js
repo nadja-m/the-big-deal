@@ -9,6 +9,24 @@ $(function(){
 });
 
 
+// die folgende Funktion war im Main, ha aber wahrscheinich nicht funktioniert
+
+// $(function(){
+// var ww = $(window).width();
+// var wh = $(window).height();
+//
+// var svg = d3.select("#vis").append("svg")
+//   .attr("width", ww)
+//   .attr("height", wh)
+//   .attr("viewBox", "0 0 " + ww + " " + wh)
+//   .attr("preserveAspectRatio", "xMidYMid");
+//
+// $(window).resize(function(){
+//   svg
+//     .attr("width", $(window).width())
+//     .attr("height", $(window).height());
+// });
+
 function export1() {
 
    var chartWidth = window.innerWidth;
@@ -238,20 +256,6 @@ function main() {
   var suedkoreaCountry;
   var australiaCountry;
 
-  var ww = $(window).width();
-  var wh = $(window).height();
-
-  var svg = d3.select("#vis").append("svg")
-    .attr("width", ww)
-    .attr("height", wh)
-    .attr("viewBox", "0 0 " + ww + " " + wh)
-    .attr("preserveAspectRatio", "xMidYMid");
-
-  $(window).resize(function(){
-    svg
-      .attr("width", $(window).width())
-      .attr("height", $(window).height());
-  });
 
   var tooltip_2 = d3.select("#vis")
       	.append("div")
