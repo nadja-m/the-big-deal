@@ -1,5 +1,50 @@
 //TODO: replace SVG refrences to functions.
 
+$(function() {
+
+ document.getElementById('titleExport2').style.display = 'block';
+
+  function showGraph() {
+    d3.selectAll('.section.export2')
+      .transition()
+        .duration(500)
+        .ease("linear")
+        .style("opacity", 1);
+  }
+
+  function hideGraph() {
+    d3.selectAll('.section.export2')
+        .style("opacity", 0);
+  }
+
+  hideGraph();
+
+  new ScrollMagic.Scene({
+      triggerElement: '.triggerExport2', // the element to scroll inside
+      triggerHook: 'onLeave', // set trigger to top
+      duration: 20
+    })
+    .addTo(controller)
+   .addIndicators()
+    .on("progress", function (e) {
+      if(e.progress > 0) {
+        showGraph();
+      }
+      else {
+        hideGraph();
+      }
+    });
+
+    new ScrollMagic.Scene({
+        triggerElement: '.triggerTitleExport2', // the element to scroll inside
+        triggerHook: 'onLeave', // set trigger to top
+        duration: 700
+      })
+      .setPin(".titleExport2")
+      .addTo(controller)
+//      .addIndicators()
+});
+
 $(function(){
   d3.xml("img/world_map.svg", "image/svg+xml", function(xml) {
         document.getElementById("export-div").appendChild(xml.documentElement);
