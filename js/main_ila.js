@@ -9,6 +9,7 @@ $(function(){
 });
 
 
+var controller;
 
 
 function export1() {
@@ -111,16 +112,17 @@ function export1() {
        }
 
 
-       var controller2 = new ScrollMagic.Controller();
+      //  var controller2 = new ScrollMagic.Controller();
 
+      controller = new ScrollMagic.Controller();
 
        new ScrollMagic.Scene({
            triggerElement: '.triggerExport1', // the element to scroll inside
            triggerHook: 'onLeave', // set trigger to top
            duration: 20
          })
-         .addTo(controller2)
-        //  .addIndicators()
+         .addTo(controller)
+         .addIndicators()
          .on("progress", function (e) {
            if(e.progress > 0) {
              dropsFall();
@@ -129,15 +131,14 @@ function export1() {
            }
          });
 
-      var controller1 = new ScrollMagic.Controller();
-
       new ScrollMagic.Scene({
           triggerElement: '.triggerTitleExport', // the element to scroll inside
           triggerHook: 'onLeave', // set trigger to top
           duration: 400
         })
         .setPin(".titleExport")
-        .addTo(controller1)
+        .addIndicators()
+        .addTo(controller)
 }
 
 // function showTooltip(exportGraph){
@@ -186,7 +187,7 @@ function visibility() {
       duration: 20
     })
     .addTo(controller)
-//    .addIndicators()
+   .addIndicators()
     .on("progress", function (e) {
       if(e.progress > 0) {
         showGraph();
@@ -196,7 +197,7 @@ function visibility() {
       }
     });
 
-    var controller3 = new ScrollMagic.Controller();
+    // var controller3 = new ScrollMagic.Controller();
 
     new ScrollMagic.Scene({
         triggerElement: '.triggerTitleExport2', // the element to scroll inside
@@ -204,7 +205,7 @@ function visibility() {
         duration: 700
       })
       .setPin(".titleExport2")
-      .addTo(controller3)
+      .addTo(controller)
 //      .addIndicators()
 }
 
@@ -367,7 +368,7 @@ function main() {
 
 
 
-  var controller9 = new ScrollMagic.Controller();
+  // var controller9 = new ScrollMagic.Controller();
 
   new ScrollMagic.Scene({
       triggerElement: '.triggerImportTitle', // the element to scroll inside
@@ -375,8 +376,8 @@ function main() {
       duration: 600
     })
     .setPin(".titleImport")
-    .addTo(controller9)
-    // .addIndicators();
+    .addTo(controller)
+    .addIndicators();
 
   // var controller10 = new ScrollMagic.Controller();
   //
@@ -957,7 +958,7 @@ Myanmar.append("path")
 
           hideImport();
 
-          var controllerImport = new ScrollMagic.Controller();
+          // var controllerImport = new ScrollMagic.Controller();
 
 
           new ScrollMagic.Scene({
@@ -965,8 +966,8 @@ Myanmar.append("path")
               triggerHook: 'onLeave', // set trigger to top
               duration: 20
             })
-            .addTo(controllerImport)
-  //          .addIndicators()
+            .addTo(controller)
+           .addIndicators()
             .on("progress", function (h) {
               if(h.progress > 0) {
                 showImport();
@@ -995,7 +996,7 @@ Myanmar.append("path")
 
         hideimportZoom();
 
-        var controllerImportZoom = new ScrollMagic.Controller();
+        // var controllerImportZoom = new ScrollMagic.Controller();
 
 
         new ScrollMagic.Scene({
@@ -1003,8 +1004,8 @@ Myanmar.append("path")
             triggerHook: 'onLeave', // set trigger to top
             duration: 20
           })
-          .addTo(controllerImportZoom)
-//          .addIndicators()
+          .addTo(controller)
+         .addIndicators()
           .on("progress", function (j) {
             if(j.progress > 0) {
               importZoom();
