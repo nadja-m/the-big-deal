@@ -1,5 +1,3 @@
-//TODO: replace SVG refrences to functions.
-
 $(function() {
   document.getElementById('titleExport2').style.display = 'block';
 
@@ -113,9 +111,7 @@ $(function(){
   }
 
   function openWindow(country){
-    document.getElementById('popup').style.display = 'block';
-    document.getElementById('xButton').style.display = 'block';
-    document.getElementById(country).style.display = 'block';
+    $('#popup, #xButton, #' + country).css('display', 'block');
     drawGuns(country, data[country]);
   }
 
