@@ -47,23 +47,50 @@ $(function() {
 $(function(){
   d3.xml("img/world_map.svg", "image/svg+xml", function(xml) {
     document.getElementById("export-div").appendChild(xml.documentElement);
+
+    d3.xml("img/export_countrys_v5.svg", "image/svg+xml", function(xml) {
+      document.getElementById("export-div").appendChild(xml.documentElement);
+
+      start();
+    });
   });
 
-  d3.xml("img/export_countrys_v5.svg", "image/svg+xml", function(xml) {
-    document.getElementById("export-div").appendChild(xml.documentElement);
-  });
+  function start() {
+    $('.popupcloser').click(function(){
+      closeall();
+    });
+
+    $("#export-div path").each(function(){
+      var el = $(this);
+      var id = el.data("id")
+
+      if(id) {
+        el.click(function(){
+          openWindow(id);
+        });
+
+        el.on('mouseover', function(){
+          showTooltip(id);
+        });
+
+        el.on('mouseout', function(){
+          hideTooltip();
+        });
+      }
+    });
+  }
 
   var data = {
-    "russia" : 51,
-    "usa" : 76,
-    "uk" : 29,
-    "france" : 16,
-    "germany" : 11,
-    "spain" : 387,
-    "ukraine" : 418,
-    "china" : 7,
-    "swiss" : 11,
-    "italy" : 17
+    "russia": 51,
+    "usa": 76,
+    "uk": 29,
+    "france": 16,
+    "germany": 11,
+    "spain": 387,
+    "ukraine": 418,
+    "china": 7,
+    "switzerland": 11,
+    "italy": 17
   }
 
   var max = [24, 40, 60, 72, 90, 90, 90] // seven circles
@@ -103,7 +130,7 @@ $(function(){
     document.getElementById('spain').style.display = 'none';
     document.getElementById('ukraine').style.display = 'none';
     document.getElementById('china').style.display = 'none';
-    document.getElementById('swiss').style.display = 'none';
+    document.getElementById('switzerland').style.display = 'none';
     document.getElementById('italy').style.display = 'none';
   }
 
@@ -144,16 +171,14 @@ $(function(){
 
   function createDrawFunction(circles, i, akCount, akId) {
     return function() {setTimeout(function(){
-      console.log("akId: "+ akId);
       kreisNeu(akCount, akId, "ak47_" + (i + 1), '50% ' + (200 + (i * 100)) +'% 0', circles);
-      console.log("draw: ak47_" + (i + 1))},
-      akTimeout * akId);
+    },
+    akTimeout * akId);
   }};
 
   function asyncDraw(slices, circles, remaining) {
     if (remaining > 0) {
       var i = slices.length - remaining;
-      console.log(slices[i]);
       var akCount = slices[i];
       for (akId = 0; akId < akCount; akId++) {
         createDrawFunction(circles, i, akCount, akId)();
