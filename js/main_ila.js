@@ -1,32 +1,4 @@
-$(function(){
-  function resize() {
-    $('.page').css('height', $(window).height());
-  }
-
-  $(window).on('resize', resize);
-
-  resize();
-});
-
-
 var controller;
-
-
-// function showTooltip(exportGraph){
-//   var tooltip = document.getElementById('export-tooltip2');
-//   tooltip.innerHTML = exportGraph;
-//   tooltip.style.display = 'block';
-// }
-// window.onmousemove = function(e) {
-//   var tooltipSpan = document.getElementById('export-tooltip2');
-//   var x = e.clientX, y = e.clientY;
-//   tooltipSpan.style.top = (y - 10) + 'px';
-//   tooltipSpan.style.left = (x + 10) + 'px';
-// }
-//
-// function hideTooltip(){
-//   document.getElementById('export-tooltip2').style.display = 'none';
-// }
 
 
 function visibility() {
