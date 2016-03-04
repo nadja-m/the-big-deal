@@ -1,7 +1,7 @@
-var controller;
 
 
-function visibility() {
+
+$(function() {
 
  document.getElementById('titleExport2').style.display = 'block';
 
@@ -20,10 +20,6 @@ function visibility() {
 
   hideGraph();
 
-
-  var controller = new ScrollMagic.Controller();
-
-
   new ScrollMagic.Scene({
       triggerElement: '.triggerExport2', // the element to scroll inside
       triggerHook: 'onLeave', // set trigger to top
@@ -40,8 +36,6 @@ function visibility() {
       }
     });
 
-    // var controller3 = new ScrollMagic.Controller();
-
     new ScrollMagic.Scene({
         triggerElement: '.triggerTitleExport2', // the element to scroll inside
         triggerHook: 'onLeave', // set trigger to top
@@ -50,7 +44,7 @@ function visibility() {
       .setPin(".titleExport2")
       .addTo(controller)
 //      .addIndicators()
-}
+});
 
 
 function importPath(file, cb) {
@@ -60,7 +54,7 @@ function importPath(file, cb) {
   });
 }
 
-function main() {
+$(function(){
   var worldMap;
   var syriaCountry;
   var irakCountry;
@@ -208,11 +202,6 @@ function main() {
   });
   });
 
-
-
-
-  // var controller9 = new ScrollMagic.Controller();
-
   new ScrollMagic.Scene({
       triggerElement: '.triggerImportTitle', // the element to scroll inside
       triggerHook: 'onLeave', // set trigger to top
@@ -221,8 +210,6 @@ function main() {
     .setPin(".titleImport")
     .addTo(controller)
     .addIndicators();
-
-  // var controller10 = new ScrollMagic.Controller();
   //
   //   new ScrollMagic.Scene ({
   //     triggerElement: '.triggerLegende1', // the element to scroll inside
@@ -801,9 +788,6 @@ Myanmar.append("path")
 
           hideImport();
 
-          // var controllerImport = new ScrollMagic.Controller();
-
-
           new ScrollMagic.Scene({
               triggerElement: '.triggerImport1', // the element to scroll inside
               triggerHook: 'onLeave', // set trigger to top
@@ -839,9 +823,6 @@ Myanmar.append("path")
 
         hideimportZoom();
 
-        // var controllerImportZoom = new ScrollMagic.Controller();
-
-
         new ScrollMagic.Scene({
             triggerElement: '.triggerImportZoom', // the element to scroll inside
             triggerHook: 'onLeave', // set trigger to top
@@ -868,4 +849,4 @@ Myanmar.append("path")
 
 
   }
-}
+});

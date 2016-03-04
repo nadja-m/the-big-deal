@@ -99,7 +99,7 @@ $(function(){
 
       //  var controller2 = new ScrollMagic.Controller();
 
-      controller = new ScrollMagic.Controller();
+
 
        new ScrollMagic.Scene({
            triggerElement: '.triggerExport1', // the element to scroll inside
