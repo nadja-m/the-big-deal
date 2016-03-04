@@ -1,59 +1,57 @@
 //TODO: replace SVG refrences to functions.
 
 $(function() {
-
- document.getElementById('titleExport2').style.display = 'block';
+  document.getElementById('titleExport2').style.display = 'block';
 
   function showGraph() {
     d3.selectAll('.section.export2')
       .transition()
-        .duration(500)
-        .ease("linear")
-        .style("opacity", 1);
+      .duration(500)
+      .ease("linear")
+      .style("opacity", 1);
   }
 
   function hideGraph() {
     d3.selectAll('.section.export2')
-        .style("opacity", 0);
+      .style("opacity", 0);
   }
 
   hideGraph();
 
   new ScrollMagic.Scene({
-      triggerElement: '.triggerExport2', // the element to scroll inside
-      triggerHook: 'onLeave', // set trigger to top
-      duration: 20
-    })
-    .addTo(controller)
-   .addIndicators()
-    .on("progress", function (e) {
-      if(e.progress > 0) {
-        showGraph();
-      }
-      else {
-        hideGraph();
-      }
-    });
+    triggerElement: '.triggerExport2', // the element to scroll inside
+    triggerHook: 'onLeave', // set trigger to top
+    duration: 20
+  })
+  .addTo(controller)
+  .addIndicators()
+  .on("progress", function (e) {
+    if(e.progress > 0) {
+      showGraph();
+    }
+    else {
+      hideGraph();
+    }
+  });
 
-    new ScrollMagic.Scene({
-        triggerElement: '.triggerTitleExport2', // the element to scroll inside
-        triggerHook: 'onLeave', // set trigger to top
-        duration: 700
-      })
-      .setPin(".titleExport2")
-      .addTo(controller)
-//      .addIndicators()
+  new ScrollMagic.Scene({
+    triggerElement: '.triggerTitleExport2', // the element to scroll inside
+    triggerHook: 'onLeave', // set trigger to top
+    duration: 700
+  })
+  .setPin(".titleExport2")
+  .addIndicators()
+  .addTo(controller)
 });
 
 $(function(){
   d3.xml("img/world_map.svg", "image/svg+xml", function(xml) {
-        document.getElementById("export-div").appendChild(xml.documentElement);
-      });
+    document.getElementById("export-div").appendChild(xml.documentElement);
+  });
 
   d3.xml("img/export_countrys_v5.svg", "image/svg+xml", function(xml) {
-                document.getElementById("export-div").appendChild(xml.documentElement);
-              });
-
+    document.getElementById("export-div").appendChild(xml.documentElement);
+  });
 
   var data = {
     "russia" : 51,
@@ -68,6 +66,7 @@ $(function(){
     "italy" : 17
   }
 
+  var max = [24, 40, 60, 72, 90, 90, 90] // seven circles
 
   window.onmousemove = function(e) {
     var tooltipSpan = document.getElementById('export-tooltip');
@@ -75,9 +74,6 @@ $(function(){
     tooltipSpan.style.top = (y - 10) + 'px';
     tooltipSpan.style.left = (x + 10) + 'px';
   }
-
-
-  var max = [24, 40, 60, 72, 90, 90, 90] // seven circles
 
   function showTooltip(country){
     var tooltip = document.getElementById('export-tooltip');
@@ -90,13 +86,11 @@ $(function(){
   }
 
   function openWindow(country){
-   console.log(country)
-   document.getElementById('popup').style.display = 'block';
-   document.getElementById('xButton').style.display = 'block';
-   document.getElementById(country).style.display = 'block';
-   drawGuns(country, data[country]);
+    document.getElementById('popup').style.display = 'block';
+    document.getElementById('xButton').style.display = 'block';
+    document.getElementById(country).style.display = 'block';
+    drawGuns(country, data[country]);
   }
-
 
   function closeall(){
     document.getElementById('popup').style.display = 'none';
@@ -111,7 +105,6 @@ $(function(){
     document.getElementById('china').style.display = 'none';
     document.getElementById('swiss').style.display = 'none';
     document.getElementById('italy').style.display = 'none';
-
   }
 
   function aufteilen(num) {
@@ -133,7 +126,6 @@ $(function(){
   }
 
   function kreisNeu(akCount, akId, klass, origin, circles){
-    console.log(akCount +  "  " + akId);
     circles.selectAll('.' + klass + akId)
       .data(new Array(1))
       .enter()
@@ -157,6 +149,7 @@ $(function(){
       console.log("draw: ak47_" + (i + 1))},
       akTimeout * akId);
   }};
+
   function asyncDraw(slices, circles, remaining) {
     if (remaining > 0) {
       var i = slices.length - remaining;
