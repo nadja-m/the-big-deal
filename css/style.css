@@ -531,49 +531,44 @@ z-index: 3;
 
 .refugee_icon{
   width: 35px;
-  position: fixed;
-  margin-top: 152px;
-  margin-left: 647px;
+  /*position: fixed;*/
+  margin-top: 157px;
+  margin-left: 50%;
 
 
 }
+
+
 .circles {
-  /*position: absolute;*/
+  position: absolute;
   margin-left: 50%;
+  margin-top: 410px;
 }
 
 .ak47_1 {
-  /*position: absolute;*/
-  margin-top: 312px;
+  top: 312px;
 }
 
 .ak47_2 {
-  /*position: absolute;*/
   top: 260px;
 }
 
 .ak47_3 {
-  /*position: absolute;*/
   top: 208px;
 }
 
 .ak47_4 {
-  /*position: absolute;*/
   top: 156px;
 }
 
 .ak47_5 {
-  /*position: absolute;*/
   top: 104px;
 }
 
 .ak47_6 {
-  /*position: absolute;*/
   top: 52px;
 }
 
 .ak47_7 {
-  /*position: absolute;*/
-  top: 0px;
-
+  top: 0;
 }
