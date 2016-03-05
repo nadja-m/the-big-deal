@@ -54,13 +54,28 @@ $(function(){
         .style("background-color", "rgba(0, 0, 0, 0.8)")
       	.style("visibility", "hidden");
 
+var tooltip_refugee = d3.select("#vis")
+        .append("div")
+        .style("position", "absolute")
+        .style("font-family", "lft-etica", "sans-serif")
+        .style("font-weight", "800")
+        .style("font-size", "12px")
+        .style("text-transform", "uppercase")
+        .style("z-index", "10")
+        .style("padding", "8px")
+        .style("color", "#000")
+        .style("background-color", "rgba(237, 28, 36, 0.8)")
+        .style("visibility", "hidden");
+
 
   function MouseMove(){
           return tooltip_2.style("top", (event.pageY-10)+"px").style("left",(event.pageX+10)+"px");
+          return tooltip_refugee.style("top", (event.pageY-10)+"px").style("left",(event.pageX+10)+"px");
         }
 
   function MouseOut() {
           return tooltip_2.style("visibility", "hidden");
+          return tooltip_refugee.style("visibility", "hidden");
         }
 
   importPath("img/world_map_nadja.svg", function(path){
@@ -415,7 +430,7 @@ Irak.append("circle")
   .attr("r", 7)
   .attr('transform', 'translate(25,25)')
   .style('fill', '#ED1C24')
-  .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Irak <br> 0.3 Mio Refugees")  ;})
+  .on("mouseover", function(){return tooltip_2.style("visibility", "visible").append('.refugees').html("Irak <br> 0.3 Mio Refugees")  ;})
   .on("mousemove", MouseMove)
   .on("mouseout", MouseOut);
 
@@ -556,14 +571,14 @@ Afghanistan.append("circle")
   .attr("r", 22)
   .attr('transform', 'translate(39,13)')
   .style('fill', '#ED1C24')
-  .on("mouseover", function(){return tooltip.style("visibility", "visible").html("Afghanistan <br> 2.6 Mio Refugees") ;})
+  .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Afghanistan <br> 2.6 Mio Refugees") ;})
   .on("mousemove", MouseMove)
   .on("mouseout", MouseOut);
 
 Afghanistan.append("path")
 .attr("d", afghanistanCountry)
 .attr('transform', 'translate(31,6) scale(0)')
-.on("mouseover", function(){return tooltip.style("visibility", "visible").html("Afghanistan <br> 2.6 Mio Refugees") ;})
+.on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Afghanistan <br> 2.6 Mio Refugees") ;})
 .on("mousemove", MouseMove)
 .on("mouseout", MouseOut);
 
@@ -576,14 +591,14 @@ Myanmar.append("circle")
   .attr("r", 8)
   .attr('transform', 'translate(24,45)')
   .style('fill', '#ED1C24')
-  .on("mouseover", function(){return tooltip.style("visibility", "visible").html("Myanmar <br> 0.5 Mio Refugees") ;})
+  .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Myanmar <br> 0.5 Mio Refugees") ;})
   .on("mousemove", MouseMove)
   .on("mouseout", MouseOut);
 
 Myanmar.append("path")
 .attr("d", myanmarCountry)
 .attr('transform', 'translate(28,36) scale(0)')
-.on("mouseover", function(){return tooltip.style("visibility", "visible").html("Myanmar <br> 0.5 Mio Refugees") ;})
+.on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Myanmar <br> 0.5 Mio Refugees") ;})
 .on("mousemove", MouseMove)
 .on("mouseout", MouseOut);
 

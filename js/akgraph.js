@@ -116,7 +116,7 @@ $(function(){
   }
 
   function closeall(){
-    $('#popup, #xButton, #russia, #usa, #uk, #france, #germany, #spain, #ukraine, #ukraine, #switzerland, #italy, #china').css('display', 'none');
+    $('#popup, .armsImg').css('display', 'none');
   }
 
   function aufteilen(num) {
