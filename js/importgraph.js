@@ -206,7 +206,7 @@ $(function(){
             .attr('transform', 'scale(1) ')
             .attr('fill', 'url(#diagonalHatch)')
             .style('stroke', '#F6EAA4')
-            .on("mouseover", function(){return tooltip_2.style("visibility", "visible").text("USA") ;})
+            .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("USA <br> 581 Mio $") ;})
             .on("mousemove", MouseMove)
             .on("mouseout", MouseOut);
 
@@ -226,7 +226,7 @@ $(function(){
             .attr('transform', 'scale(1) ')
             .attr('fill', 'url(#diagonalHatch)')
             .style('stroke', '#F6EAA4')
-            .on("mouseover", function(){return tooltip_2.style("visibility", "visible").text("Turkey") ;})
+            .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Turkey <br> 1550 Mio $") ;})
             .on("mousemove", MouseMove)
             .on("mouseout", MouseOut);
 
@@ -247,7 +247,7 @@ $(function(){
             .attr('transform', 'scale(1) ')
             .attr('fill', 'url(#diagonalHatch)')
             .style('stroke', '#F6EAA4')
-            .on("mouseover", function(){return tooltip_2.style("visibility", "visible").text("Saudi Arabia") ;})
+            .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Saudi Arabia <br> 2629 Mio $") ;})
             .on("mousemove", MouseMove)
             .on("mouseout", MouseOut);
 
@@ -267,7 +267,7 @@ $(function(){
             .attr('transform', 'scale(1) ')
             .attr('fill', 'url(#diagonalHatch)')
             .style('stroke', '#F6EAA4')
-            .on("mouseover", function(){return tooltip_2.style("visibility", "visible").text("United Arabian Emirates") ;})
+            .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("UAE <br> 1031 Mio $") ;})
             .on("mousemove", MouseMove)
             .on("mouseout", MouseOut);
 
@@ -287,7 +287,7 @@ $(function(){
             .attr('transform', 'scale(1) ')
             .attr('fill', 'url(#diagonalHatch)')
             .style('stroke', '#F6EAA4')
-            .on("mouseover", function(){return tooltip_2.style("visibility", "visible").text("Pakistan") ;})
+            .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Pakistan <br> 659 Mio $") ;})
             .on("mousemove", MouseMove)
             .on("mouseout", MouseOut);
 
@@ -307,7 +307,7 @@ $(function(){
             .attr('transform', 'scale(1) ')
             .attr('fill', 'url(#diagonalHatch)')
             .style('stroke', '#F6EAA4')
-            .on("mouseover", function(){return tooltip_2.style("visibility", "visible").text("India") ;})
+            .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("India <br> 4243 Mio $") ;})
             .on("mousemove", MouseMove)
             .on("mouseout", MouseOut);
 
@@ -327,7 +327,7 @@ $(function(){
             .attr('transform', 'scale(1) ')
             .attr('fill', 'url(#diagonalHatch)')
             .style('stroke', '#F6EAA4')
-            .on("mouseover", function(){return tooltip_2.style("visibility", "visible").text("China") ;})
+            .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("China <br> 1357 Mio $") ;})
             .on("mousemove", MouseMove)
             .on("mouseout", MouseOut);
 
@@ -347,7 +347,7 @@ $(function(){
             .attr('transform', 'scale(1) ')
             .attr('fill', 'url(#diagonalHatch)')
             .style('stroke', '#F6EAA4')
-            .on("mouseover", function(){return tooltip_2.style("visibility", "visible").text("South Korea") ;})
+            .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("South Korea <br> 530 Mio $") ;})
             .on("mousemove", MouseMove)
             .on("mouseout", MouseOut);
 
@@ -367,7 +367,7 @@ $(function(){
             .attr('transform', 'scale(1) ')
             .attr('fill', 'url(#diagonalHatch)')
             .style('stroke', '#F6EAA4')
-            .on("mouseover", function(){return tooltip_2.style("visibility", "visible").text("Australia") ;})
+            .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Australia <br> 842 Mio $") ;})
             .on("mousemove", MouseMove)
             .on("mouseout", MouseOut);
 
