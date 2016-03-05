@@ -43,30 +43,7 @@ $(function(){
 
   var tooltip_2 = d3.select("#vis")
       	.append("div")
-      	.style("position", "absolute")
-        .style("font-family", "lft-etica", "sans-serif")
-        .style("font-weight", "800")
-        .style("font-size", "12px")
-        .style("text-transform", "uppercase")
-      	.style("z-index", "10")
-        .style("padding", "8px")
-        .style("color", "#FFF")
-        .style("background-color", "rgba(0, 0, 0, 0.8)")
-      	.style("visibility", "hidden");
-
-var tooltip_refugee = d3.select("#vis")
-        .append("div")
-        .style("position", "absolute")
-        .style("font-family", "lft-etica", "sans-serif")
-        .style("font-weight", "800")
-        .style("font-size", "12px")
-        .style("text-transform", "uppercase")
-        .style("z-index", "10")
-        .style("padding", "8px")
-        .style("color", "#000")
-        .style("background-color", "rgba(237, 28, 36, 0.8)")
-        .style("visibility", "hidden");
-
+        .attr("class", "tooltip_2");
 
   function MouseMove(){
           return tooltip_2.style("top", (event.pageY-10)+"px").style("left",(event.pageX+10)+"px");
@@ -430,7 +407,7 @@ Irak.append("circle")
   .attr("r", 7)
   .attr('transform', 'translate(25,25)')
   .style('fill', '#ED1C24')
-  .on("mouseover", function(){return tooltip_2.style("visibility", "visible").append('.refugees').html("Irak <br> 0.3 Mio Refugees")  ;})
+  .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Irak <br> 0.3 Mio Refugees")  ;})
   .on("mousemove", MouseMove)
   .on("mouseout", MouseOut);
 
