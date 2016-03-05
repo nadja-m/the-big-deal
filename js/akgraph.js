@@ -116,18 +116,7 @@ $(function(){
   }
 
   function closeall(){
-    document.getElementById('popup').style.display = 'none';
-    document.getElementById('xButton').style.display = 'none';
-    document.getElementById('russia').style.display = 'none';
-    document.getElementById('usa').style.display = 'none';
-    document.getElementById('uk').style.display = 'none';
-    document.getElementById('france').style.display = 'none';
-    document.getElementById('germany').style.display = 'none';
-    document.getElementById('spain').style.display = 'none';
-    document.getElementById('ukraine').style.display = 'none';
-    document.getElementById('china').style.display = 'none';
-    document.getElementById('switzerland').style.display = 'none';
-    document.getElementById('italy').style.display = 'none';
+    $('#popup, #xButton, #russia, #usa, #uk, #france, #germany, #spain, #ukraine, #ukraine, #switzerland, #italy').css('display', 'none');
   }
 
   function aufteilen(num) {
@@ -156,7 +145,7 @@ $(function(){
           .attr('class', klass)
           .attr('id', akId)
           .attr('src', 'img/ak47.svg')
-          .attr('width', 32     )
+          .attr('width', 32)
           .style('-webkit-transform-origin', origin)
           .style('-webkit-transform', function(d, i){
             return 'rotate(' + 360 / akCount * akId + 'deg)'
