@@ -538,49 +538,42 @@ z-index: 3;
 
 }
 .circles {
-  position: absolute;
-  top: 420px;
+  /*position: absolute;*/
+  margin-left: 50%;
 }
 
 .ak47_1 {
-  position: absolute;
-  top: 312px;
-  left: 650px;
+  /*position: absolute;*/
+  margin-top: 312px;
 }
 
 .ak47_2 {
-  position: absolute;
+  /*position: absolute;*/
   top: 260px;
-  left: 650px;
 }
 
 .ak47_3 {
-  position: absolute;
+  /*position: absolute;*/
   top: 208px;
-  left: 650px;
 }
 
 .ak47_4 {
-  position: absolute;
+  /*position: absolute;*/
   top: 156px;
-  left: 650px;
 }
 
 .ak47_5 {
-  position: absolute;
+  /*position: absolute;*/
   top: 104px;
-  left: 650px;
 }
 
 .ak47_6 {
-  position: absolute;
+  /*position: absolute;*/
   top: 52px;
-  left: 650px;
 }
 
 .ak47_7 {
-  position: absolute;
+  /*position: absolute;*/
   top: 0px;
-  left: 650px;
 
 }
