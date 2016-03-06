@@ -38,4 +38,13 @@ $(function(){
 		$('html, body').animate({scrollTop : 1000},800);
 		return false;
 	});
+
+  $(window).scroll(function(){
+		if ($(this).scrollTop() < 50) {
+			$('.scroller').fadeIn();
+		} else {
+			$('.scroller').fadeOut();
+		}
+	});
+
 });
