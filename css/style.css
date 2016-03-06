@@ -280,6 +280,7 @@ h5{
   background-image: url(../img/arrow_fat.svg);
   background-repeat: no-repeat;
   z-index: 10;
+  cursor:pointer;
 }
 
 .scroller:hover{
@@ -326,6 +327,7 @@ h5{
   color: #FFF;
   background-color: rgba(0, 0, 0, 0.8);
   visibility: hidden;
+  cursor:help;
 }
 
 .refugees{
