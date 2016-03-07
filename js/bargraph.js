@@ -13,28 +13,13 @@ $(function(){
        .attr("class", "tooltip");
 
 
-       function MouseMoveBars(){
-               return tooltip.style("top", (event.pageY-10)+"px").style("left",(event.pageX+10)+"px");
+  function MouseMoveBars(){
+        return tooltip.style("top", (event.pageY-10)+"px").style("left",(event.pageX+10)+"px");
+        }
 
-             }
-
-       function MouseOutBars() {
-               return tooltip.style("visibility", "hidden");
-
-             }
-        //
-        // .attr('class', 'd3-tip')               // OLD TOOLTIP CODE
-        // .offset([-10 , 0])
-        // .style("position", "absolute")
-        // .style("z-index", "10")
-        // .html(function(d) {
-        //   return "<strong>" + d.Country + ":</strong> <span style='color:white'>" + d.Export + "Mio $</span>";
-          // return tip.style("top", (event.pageY-10) + "px")
-          //        tip.style("left", (event.pageX+10) + "px");
-
-        // var tooltip_2 = d3.select("#vis")      //FANNY TOOLTIP CODE
-        //       .append("div")
-        //       .attr("class", "tooltip_2");
+  function MouseOutBars() {
+        return tooltip.style("visibility", "hidden");
+        }
 
 
     var svg = d3.select(".section.export1").append("svg")
@@ -43,9 +28,7 @@ $(function(){
        .append("g")
          .attr("transform", "translate");
 
-    // svg.call(tip);
-    //
-      function convert(d) {
+    function convert(d) {
         d.Export = +d.Export;
         return d;
       }
@@ -67,8 +50,7 @@ $(function(){
                .attr('height', 0)
                .attr("rx", 3)
                .attr("ry", 3)
-              //  .on("mousemove", tip.show)
-               .on("mouseover", function(){return tooltip.style("visibility", "visible").html("<strong>" + d.Country + ":</strong> <span style='color:white'>" + d.Export + "Mio $</span>")})
+               .on("mouseover", function(){return tooltip.style("visibility", "visible").html(function(d){return(d.Country)} + "<br>" + function(d){return(d.Export)} + "Mio $")})
                .on("mousemove", MouseMoveBars)
                .on("mouseout", MouseOutBars);
 
