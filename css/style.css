@@ -1,3 +1,29 @@
+@font-face {
+    font-family: 'lft_eticaregular';
+    src: url('fonts/lfteticaregular-webfont.eot');
+    src: url('fonts/lfteticaregular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/lfteticaregular-webfont.woff2') format('woff2'),
+         url('fonts/lfteticaregular-webfont.woff') format('woff'),
+         url('fonts/lfteticaregular-webfont.ttf') format('truetype'),
+         url('fonts/lfteticaregular-webfont.svg#lft_eticaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'lft_eticabold';
+    src: url('fonts/lfteticabold-webfont.eot');
+    src: url('fonts/lfteticabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/lfteticabold-webfont.woff2') format('woff2'),
+         url('fonts/lfteticabold-webfont.woff') format('woff'),
+         url('fonts/lfteticabold-webfont.ttf') format('truetype'),
+         url('fonts/lfteticabold-webfont.svg#lft_eticabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /*general*/
 
 body {
@@ -12,7 +38,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  font-family: "lft-etica",sans-serif;
+  font-family: "lft_eticaregular";
   text-transform: uppercase;
 }
 
@@ -41,9 +67,8 @@ body {
 /*text*/
 
 .infos {
-  font-family: "lft-etica",sans-serif;
+  font-family: "lft_eticabold";
   font-size: 10px;
-  font-weight: 600;
   color: rgb(237,28,36);
   text-decoration: none;
   text-align: center;
@@ -62,7 +87,7 @@ a:visited{
 }
 
 p {
-  font-family: "lft-etica",sans-serif;
+  font-family: "lft_eticaregular";
   text-transform: uppercase;
   font-size: 10px;
   color: rgba (0,0,0,0.8);
@@ -72,7 +97,7 @@ p {
 }
 
 .sources {
-  font-family: "lft-etica",sans-serif;
+  font-family: "lft_eticaregular";
   text-transform: uppercase;
   font-size: 10px;
   text-align: center;
@@ -87,9 +112,8 @@ p {
 }
 
 .DataTitle {
-  font-family: "lft-etica",sans-serif;
+  font-family: "lft_eticabold";
   text-transform: uppercase;
-  font-weight: 800;
   color: rgb(237,28,36);
   text-align: center;
   line-height: 120%;
@@ -98,9 +122,8 @@ p {
 }
 
 .titleStart {
-  font-family: "lft-etica";
+  font-family: "lft_eticabold";
   font-size: 110px;
-  font-weight: 800;
   letter-spacing: 1px;
   font-style: normal;
   color: #FFC;
@@ -109,9 +132,8 @@ p {
 }
 
 .titleImport {
-  font-family: "lft-etica",sans-serif;
+  font-family: "lft_eticabold";
   font-size: 50px;
-  font-weight: 800;
   color: rgb(237,28,36);
   position: absolute;
   margin: 0 300px 0 50px;
@@ -119,9 +141,8 @@ p {
 }
 
 .titleImportBreak {
-  font-family: "lft-etica",sans-serif;
+  font-family: "lft_eticabold";
   font-size: 50px;
-  font-weight: 800;
   color: rgb(237,28,36);
   position: absolute;
   margin: 600px 300px 0 800px;
@@ -129,9 +150,8 @@ p {
 }
 
 .titleImport1 {
-  font-family: "lft-etica",sans-serif;
+  font-family: "lft_eticabold";
   font-size: 50px;
-  font-weight: 800;
   color: rgb(237,28,36);
   position: absolute;
   margin: 660px 300px 0 50px;
@@ -140,19 +160,16 @@ p {
 }
 
 .titleExport {
-  font-family: "lft-etica",sans-serif;
+  font-family: "lft_eticabold";
   font-size: 50px;
-  font-weight: 800;
-  /*font-size: 40px;*/
   color: rgb(237,28,36);
   margin: 0 100px 0 60px;
   position: absolute;
 }
 
 .titleExport2 {
-  font-family: "lft-etica",sans-serif;
+  font-family: "lft_eticabold";
   font-size: 50px;
-  font-weight: 800;
   color: rgb(237,28,36);
   margin: 200px 100px 0 60px;
   position: absolute;
@@ -174,9 +191,8 @@ p {
 }
 
 .text {
-  font-family: "lft-etica",sans-serif;
+  font-family: "lft_eticabold";
   font-size: 30px;
-  font-weight: 600;
   line-height: 140%;
   color: black;
   text-align: center;
@@ -185,9 +201,8 @@ p {
 }
 
 .text2 {
-  font-family: "lft-etica",sans-serif;
+  font-family: "lft_eticabold";
   font-size: 30px;
-  font-weight: 600;
   line-height: 140%;
   color: black;
   text-align: center;
@@ -196,9 +211,8 @@ p {
 }
 
 .text3 {
-  font-family: "lft-etica",sans-serif;
+  font-family: "lft_eticabold";
   font-size: 30px;
-  font-weight: 600;
   line-height: 140%;
   color: black;
   text-align: center;
@@ -207,14 +221,14 @@ p {
 }
 
 h1{
-  font-family: "lft-etica",sans-serif;
+  font-family: "lft_eticaregular";
   text-transform: uppercase;
   font-size: 4em;
   margin-left: 1em;
 }
 
 h2{
-  font-family: "lft-etica",sans-serif;
+  font-family: "lft_eticaregular";
   text-transform: uppercase;
   font-size: 3em;
   color: black;
@@ -224,7 +238,7 @@ h2{
 }
 
 h3{
-  font-family: "lft-etica",sans-serif;
+  font-family: "lft_eticaregular";
   text-transform: uppercase;
   font-size: 1.5em;
   color: #FFC;
@@ -233,7 +247,7 @@ h3{
 }
 
 h4{
-  font-family: "lft-etica",sans-serif;
+  font-family: "lft_eticaregular";
   text-transform: uppercase;
   font-size: 1em;
   color: black;
@@ -242,7 +256,7 @@ h4{
 }
 
 h5{
-  font-family: "lft-etica",sans-serif;
+  font-family: "lft_eticaregular";
   font-size: 1em;
   color: black;
   margin-left: 3em;
@@ -317,10 +331,22 @@ h5{
   opacity: 0;
 }
 
-.tooltip_2 .tooltip{
+.tooltip_2{
   position: absolute;
-  font-family: "lft-etica", sans-serif;
-  font-weight: 800;
+  font-family: "lft_eticabold";
+  font-size: 0.750em;
+  text-transform: uppercase;
+  z-index: 10;
+  padding: 0.500em;
+  color: #FFF;
+  background-color: rgba(0, 0, 0, 0.8);
+  visibility: hidden;
+  cursor:help;
+}
+
+.tooltip{
+  position: absolute;
+  font-family: "lft_eticabold";
   font-size: 0.750em;
   text-transform: uppercase;
   z-index: 10;
@@ -370,9 +396,8 @@ h5{
 }
 
 .d3-tip {
-  font-family: "lft-etica",sans-serif;
+  font-family: "lft_eticabold";
   line-height: 1;
-  font-weight: bold;
   padding: 0.750em;
   background: rgba(0, 0, 0, 0.8);
   color: #fff;
@@ -404,10 +429,9 @@ h5{
 }
 
 #export-div span {
-  font-family: "lft-etica",sans-serif;
+  font-family: "lft_eticabold";
   font-size: 0.750em;
   line-height: 1;
-  font-weight: bold;
   text-transform: uppercase;
   color: #fff;
   padding: 0.500em;
