@@ -4,6 +4,7 @@ body {
   margin: 0 auto;  /* auto sollte bewirken, dass die Seite eingemittet ist */
   position: relative;
   padding: 0;
+  /*overflow: hidden;*/
   box-sizing: border-box;
   background-image: url(../img/Paper.png);
   background-size: 100%;
@@ -328,6 +329,19 @@ h5{
   background-color: rgba(0, 0, 0, 0.8);
   visibility: hidden;
   cursor:help;
+}
+
+.tooltip{
+  position: absolute;
+  font-family: "lft-etica", sans-serif;
+  font-weight: 800;
+  font-size: 12px;
+  text-transform: uppercase;
+  z-index: 10;
+  padding: 8px;
+  color: #FFF;
+  background-color: rgba(0, 0, 0, 0.8);
+  visibility: hidden;
 }
 
 .refugees{
