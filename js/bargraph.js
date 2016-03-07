@@ -50,7 +50,7 @@ $(function(){
                .attr('height', 0)
                .attr("rx", 3)
                .attr("ry", 3)
-               .on("mouseover", function(){return tooltip.style("visibility", "visible").html(function(d){return(d.Country)} + "<br>" + function(d){return(d.Export)} + "Mio $")})
+               .on("mouseover", function(d){return tooltip.style("visibility", "visible").html(d.Country + "<br>" + d.Export + "Mio $")})
                .on("mousemove", MouseMoveBars)
                .on("mouseout", MouseOutBars);
 
