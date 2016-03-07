@@ -3,3 +3,17 @@ function importPath(file, cb) {
     cb(xml.documentElement.getElementsByTagName("path")[0].attributes.d.value);
   });
 }
+
+
+// Langsamer Scrollen
+
+var nice = false;
+
+$(document).ready(
+
+  function() {
+
+    nice = $("html").niceScroll({cursoropacitymax: '0', bouncescroll:'false'});
+
+  }
+);
