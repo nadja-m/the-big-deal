@@ -140,6 +140,10 @@ p {
   margin-left: 3%;
 }
 
+.titleExport2{
+  margin-top: 10%;
+}
+
 .legende1 {
   position: absolute;
   width: 40%;
@@ -200,7 +204,7 @@ h2{
 h3{
   font-size: 1.5em;
   color: #FFC;
-  margin-top: -30px;
+  margin-top: -1.5%;
 }
 
 h4{
@@ -210,7 +214,7 @@ h4{
 
 h5{
   font-size: 1em;
-  margin-top: -23px;
+  margin-top: -1%;
 }
 
 /*start section*/
