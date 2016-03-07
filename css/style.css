@@ -140,15 +140,6 @@ p {
   margin-left: 3%;
 }
 
-.titleImport{
-  /*margin: 0 300px 0 50px;*/
-}
-
-/*.titleImport1 {
-  margin: 660px 300px 0 50px;
-  opacity: 0;
-}*/
-
 .legende1 {
   position: absolute;
   width: 40%;
@@ -163,34 +154,25 @@ p {
   z-index: 1;
 }
 
-.text {
+.text, .text2, .text3 {
   font-family: "lft_eticabold";
-  font-size: 30px;
+  font-size: 1.875em;
   line-height: 140%;
   color: black;
   text-align: center;
-  padding-top: 225px;
-  margin: 150px 200px 0 200px;
+  margin: 0 15% 0 15%;
+}
+
+.text{
+  padding-top: 18%;
 }
 
 .text2 {
-  font-family: "lft_eticabold";
-  font-size: 30px;
-  line-height: 140%;
-  color: black;
-  text-align: center;
-  padding-top: 275px;
-  margin: 150px 200px 0 200px;
+  padding-top: 22%;
 }
 
 .text3 {
-  font-family: "lft_eticabold";
-  font-size: 30px;
-  line-height: 140%;
-  color: black;
-  text-align: center;
-  padding-top: 225px;
-  margin: 150px 200px 0 200px;
+  padding-top: 20%;
 }
 
 h1{
