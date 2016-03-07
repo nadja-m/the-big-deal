@@ -31,8 +31,8 @@ $(function(){
   var svg = d3.select("#vis").append("svg")
     .attr("width", ww)
     .attr("height", wh)
-    .attr("viewBox", "0 0 ww wh")             //über die Viewbox kann man das SVG in ein neues Koordinatensystems setzen ohne, dass das Koordinatensystem des svgs verändert wird.
-    .attr("preserveAspectRatio", "xMidYMid");
+    .attr("viewBox", "0 0 1516 850")             //über die Viewbox kann man das SVG in ein neues Koordinatensystems setzen ohne, dass das Koordinatensystem des svgs verändert wird.
+    .attr("preserveAspectRatio", "xMinYMin");
 
   $(window).resize(function(){
     svg
@@ -778,7 +778,7 @@ Myanmar.append("path")
               // document.getElementById('titleImport1').style.display = 'block';
               // document.getElementById('titleImportBreak').style.display = 'block';
               document.getElementById('vis').style.opacity = 1;
-              document.getElementById('legende').style.display = 'block';
+              // document.getElementById('legende').style.display = 'block';
 
             }
           });
