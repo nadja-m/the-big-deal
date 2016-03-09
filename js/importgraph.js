@@ -47,12 +47,10 @@ $(function(){
 
   function MouseMove(){
           return tooltip_2.style("top", (event.pageY-10)+"px").style("left",(event.pageX+10)+"px");
-          return tooltip_refugee.style("top", (event.pageY-10)+"px").style("left",(event.pageX+10)+"px");
         }
 
   function MouseOut() {
           return tooltip_2.style("visibility", "hidden");
-          return tooltip_refugee.style("visibility", "hidden");
         }
 
   importPath("img/world_map_nadja.svg", function(path){
@@ -206,7 +204,7 @@ $(function(){
             .attr('transform', 'scale(1) ')
             .attr('fill', 'url(#diagonalHatch)')
             .style('stroke', '#F6EAA4')
-            .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("USA <br> 581 Mio $") ;})
+            .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("USA <br> 581 Mio $").attr("class", "tooltip_2")  ;})
             .on("mousemove", MouseMove)
             .on("mouseout", MouseOut);
 
@@ -226,7 +224,7 @@ $(function(){
             .attr('transform', 'scale(1) ')
             .attr('fill', 'url(#diagonalHatch)')
             .style('stroke', '#F6EAA4')
-            .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Turkey <br> 1550 Mio $") ;})
+            .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Turkey <br> 1550 Mio $").attr("class", "tooltip_2")  ;})
             .on("mousemove", MouseMove)
             .on("mouseout", MouseOut);
 
@@ -247,7 +245,7 @@ $(function(){
             .attr('transform', 'scale(1) ')
             .attr('fill', 'url(#diagonalHatch)')
             .style('stroke', '#F6EAA4')
-            .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Saudi Arabia <br> 2629 Mio $") ;})
+            .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Saudi Arabia <br> 2629 Mio $").attr("class", "tooltip_2")  ;})
             .on("mousemove", MouseMove)
             .on("mouseout", MouseOut);
 
@@ -267,7 +265,7 @@ $(function(){
             .attr('transform', 'scale(1) ')
             .attr('fill', 'url(#diagonalHatch)')
             .style('stroke', '#F6EAA4')
-            .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("UAE <br> 1031 Mio $") ;})
+            .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("UAE <br> 1031 Mio $").attr("class", "tooltip_2")  ;})
             .on("mousemove", MouseMove)
             .on("mouseout", MouseOut);
 
@@ -287,7 +285,7 @@ $(function(){
             .attr('transform', 'scale(1) ')
             .attr('fill', 'url(#diagonalHatch)')
             .style('stroke', '#F6EAA4')
-            .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Pakistan <br> 659 Mio $") ;})
+            .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Pakistan <br> 659 Mio $").attr("class", "tooltip_2")  ;})
             .on("mousemove", MouseMove)
             .on("mouseout", MouseOut);
 
@@ -307,7 +305,7 @@ $(function(){
             .attr('transform', 'scale(1) ')
             .attr('fill', 'url(#diagonalHatch)')
             .style('stroke', '#F6EAA4')
-            .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("India <br> 4243 Mio $") ;})
+            .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("India <br> 4243 Mio $").attr("class", "tooltip_2")  ;})
             .on("mousemove", MouseMove)
             .on("mouseout", MouseOut);
 
@@ -327,7 +325,7 @@ $(function(){
             .attr('transform', 'scale(1) ')
             .attr('fill', 'url(#diagonalHatch)')
             .style('stroke', '#F6EAA4')
-            .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("China <br> 1357 Mio $") ;})
+            .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("China <br> 1357 Mio $").attr("class", "tooltip_2")  ;})
             .on("mousemove", MouseMove)
             .on("mouseout", MouseOut);
 
@@ -347,7 +345,7 @@ $(function(){
             .attr('transform', 'scale(1) ')
             .attr('fill', 'url(#diagonalHatch)')
             .style('stroke', '#F6EAA4')
-            .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("South Korea <br> 530 Mio $") ;})
+            .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("South Korea <br> 530 Mio $").attr("class", "tooltip_2")  ;})
             .on("mousemove", MouseMove)
             .on("mouseout", MouseOut);
 
@@ -367,7 +365,7 @@ $(function(){
             .attr('transform', 'scale(1) ')
             .attr('fill', 'url(#diagonalHatch)')
             .style('stroke', '#F6EAA4')
-            .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Australia <br> 842 Mio $") ;})
+            .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Australia <br> 842 Mio $").attr("class", "tooltip_2")  ;})
             .on("mousemove", MouseMove)
             .on("mouseout", MouseOut);
 
@@ -386,14 +384,14 @@ Syrien.append("circle")
   .attr("r", 30)
   .attr('transform', 'translate(10,10)')
   .style('fill', '#ED1C24')
-  .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Syria <br> 3.8 Mio Refugees") ;})
+  .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Syria <br> 3.8 Mio Refugees").attr("class", "refugees") ;})
   .on("mousemove", MouseMove)
   .on("mouseout", MouseOut);
 
 Syrien.append("path")
 .attr("d",syriaCountry)
 .attr('transform', 'scale(0) ')
-.on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Syria <br> 3.8 Mio Refugees") ;})
+.on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Syria <br> 3.8 Mio Refugees").attr("class", "refugees")  ;})
 .on("mousemove", MouseMove)
 .on("mouseout", MouseOut);
 
@@ -407,7 +405,7 @@ Irak.append("circle")
   .attr("r", 7)
   .attr('transform', 'translate(25,25)')
   .style('fill', '#ED1C24')
-  .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Irak <br> 0.3 Mio Refugees")  ;})
+  .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Irak <br> 0.3 Mio Refugees").attr("class", "refugees")  ;})
   .on("mousemove", MouseMove)
   .on("mouseout", MouseOut);
 
@@ -415,7 +413,7 @@ Irak.append("circle")
 Irak.append("path")
 .attr("d", irakCountry)
 .attr('transform', 'translate(26,20) scale(0)')
-.on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Irak <br> 0.3 Mio Refugees")  ;})
+.on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Irak <br> 0.3 Mio Refugees").attr("class", "refugees")  ;})
 .on("mousemove", MouseMove)
 .on("mouseout", MouseOut);
 
@@ -428,14 +426,14 @@ Somalia.append("circle")
   .attr("r", 12)
   .attr('transform', 'translate(39,13)')
   .style('fill', '#ED1C24')
-  .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Somalia <br> 1.1 Mio Refugees") ;})
+  .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Somalia <br> 1.1 Mio Refugees").attr("class", "refugees") ;})
   .on("mousemove", MouseMove)
   .on("mouseout", MouseOut);
 
 Somalia.append("path")
 .attr("d", somaliaCountry)
 .attr('transform', 'translate(35,20) scale(0)')
-.on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Somalia <br> 1.1 Mio Refugees") ;})
+.on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Somalia <br> 1.1 Mio Refugees").attr("class", "refugees") ;})
 .on("mousemove", MouseMove)
 .on("mouseout", MouseOut);
 
@@ -448,14 +446,14 @@ Eritrea.append("circle")
   .attr("r", 7)
   .attr('transform', 'translate(0,0)')
   .style('fill', '#ED1C24')
-  .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Eritrea <br> 0.3 Mio Refugees") ;})
+  .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Eritrea <br> 0.3 Mio Refugees").attr("class", "refugees") ;})
   .on("mousemove", MouseMove)
   .on("mouseout", MouseOut);
 
 Eritrea.append("path")
 .attr("d", eritreaCountry)
 .attr('transform', 'scale(0)')
-.on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Eritrea <br> 0.3 Mio Refugees") ;})
+.on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Eritrea <br> 0.3 Mio Refugees").attr("class", "refugees") ;})
 .on("mousemove", MouseMove)
 .on("mouseout", MouseOut);
 
@@ -468,14 +466,14 @@ Sudan.append("circle")
   .attr("r", 9)
   .attr('transform', 'translate(39,13)')
   .style('fill', '#ED1C24')
-  .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Sudan <br> 0.6 Mio Refugees") ;})
+  .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Sudan <br> 0.6 Mio Refugees").attr("class", "refugees") ;})
   .on("mousemove", MouseMove)
   .on("mouseout", MouseOut);
 
 Sudan.append("path")
 .attr("d", sudanCountry)
 .attr('transform', 'translate(30,8) scale(0)')
-.on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Sudan <br> 0.6 Mio Refugees") ;})
+.on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Sudan <br> 0.6 Mio Refugees").attr("class", "refugees") ;})
 .on("mousemove", MouseMove)
 .on("mouseout", MouseOut);
 
@@ -488,14 +486,14 @@ Southsudan.append("circle")
   .attr("r", 9)
   .attr('transform', 'translate(39,13)')
   .style('fill', '#ED1C24')
-  .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("South Sudan <br> 0.6 Mio Refugees") ;})
+  .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("South Sudan <br> 0.6 Mio Refugees").attr("class", "refugees") ;})
   .on("mousemove", MouseMove)
   .on("mouseout", MouseOut);
 
 Southsudan.append("path")
 .attr("d", southsudanCountry)
 .attr('transform', 'translate(30,14) scale(0)')
-.on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("South Sudan <br> 0.6 Mio Refugees") ;})
+.on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("South Sudan <br> 0.6 Mio Refugees").attr("class", "refugees") ;})
 .on("mousemove", MouseMove)
 .on("mouseout", MouseOut);
 
@@ -508,14 +506,14 @@ ZentralafrikanischeRepublik.append("circle")
   .attr("r", 7.5)
   .attr('transform', 'translate(39,13)')
   .style('fill', '#ED1C24')
-  .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Central African Republic <br> 0.4 Mio Refugees") ;})
+  .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Central African Republic <br> 0.4 Mio Refugees").attr("class", "refugees") ;})
   .on("mousemove", MouseMove)
   .on("mouseout", MouseOut);
 
 ZentralafrikanischeRepublik.append("path")
 .attr("d", zentralafrikanischeRepublikCountry)
 .attr('transform', 'translate(30,14) scale(0)')
-.on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Central African Republic <br> 0.4 Mio Refugees") ;})
+.on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Central African Republic <br> 0.4 Mio Refugees").attr("class", "refugees") ;})
 .on("mousemove", MouseMove)
 .on("mouseout", MouseOut);
 
@@ -528,14 +526,14 @@ Congo.append("circle")
   .attr("r", 8)
   .attr('transform', 'translate(39,13)')
   .style('fill', '#ED1C24')
-  .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Congo <br> 0.5 Mio Refugees") ;})
+  .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Congo <br> 0.5 Mio Refugees").attr("class", "refugees") ;})
   .on("mousemove", MouseMove)
   .on("mouseout", MouseOut);
 
 Congo.append("path")
 .attr("d", congoCountry)
 .attr('transform', 'translate(31,6) scale(0)')
-.on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Congo <br> 0.5 Mio Refugees") ;})
+.on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Congo <br> 0.5 Mio Refugees").attr("class", "refugees") ;})
 .on("mousemove", MouseMove)
 .on("mouseout", MouseOut);
 
@@ -548,14 +546,14 @@ Afghanistan.append("circle")
   .attr("r", 22)
   .attr('transform', 'translate(39,13)')
   .style('fill', '#ED1C24')
-  .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Afghanistan <br> 2.6 Mio Refugees") ;})
+  .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Afghanistan <br> 2.6 Mio Refugees").attr("class", "refugees") ;})
   .on("mousemove", MouseMove)
   .on("mouseout", MouseOut);
 
 Afghanistan.append("path")
 .attr("d", afghanistanCountry)
 .attr('transform', 'translate(31,6) scale(0)')
-.on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Afghanistan <br> 2.6 Mio Refugees") ;})
+.on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Afghanistan <br> 2.6 Mio Refugees").attr("class", "refugees") ;})
 .on("mousemove", MouseMove)
 .on("mouseout", MouseOut);
 
@@ -568,14 +566,14 @@ Myanmar.append("circle")
   .attr("r", 8)
   .attr('transform', 'translate(24,45)')
   .style('fill', '#ED1C24')
-  .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Myanmar <br> 0.5 Mio Refugees") ;})
+  .on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Myanmar <br> 0.5 Mio Refugees").attr("class", "refugees") ;})
   .on("mousemove", MouseMove)
   .on("mouseout", MouseOut);
 
 Myanmar.append("path")
 .attr("d", myanmarCountry)
 .attr('transform', 'translate(28,36) scale(0)')
-.on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Myanmar <br> 0.5 Mio Refugees") ;})
+.on("mouseover", function(){return tooltip_2.style("visibility", "visible").html("Myanmar <br> 0.5 Mio Refugees").attr("class", "refugees") ;})
 .on("mousemove", MouseMove)
 .on("mouseout", MouseOut);
 

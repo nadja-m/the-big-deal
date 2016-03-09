@@ -298,7 +298,7 @@ h5{
   cursor:help;
 }
 
-.tooltip{
+.tooltip_2, .refugees{
   position: absolute;
   font-family: "lft_eticabold";
   font-size: 0.750em;
@@ -313,7 +313,7 @@ h5{
 
 .refugees{
   color: #000;
-  background-color: rgba(237, 28, 36, 0.8);
+  background-color: rgba(237, 28, 36, 0.9);
 }
 
 /*import section 2*/
