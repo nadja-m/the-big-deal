@@ -136,6 +136,7 @@ p {
   font-size: 3.125em;
   color: rgb(237,28,36);
   position: absolute;
+  white-space: nowrap;
   z-index: 2;
   margin-left: 3%;
 }
