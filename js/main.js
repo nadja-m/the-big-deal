@@ -31,7 +31,7 @@ $(function(){
 	});
 
 	//show scroller after some time
-	$('.scroller').delay(2000).fadeIn();
+	$('.scroller').delay(1000).fadeIn();
 
 	//initialize scroll
 	$('.scroller').click(function(){
