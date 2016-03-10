@@ -24,7 +24,6 @@ $(function(){
 
   // die folgende Funktion war im Main, ha aber wahrscheinich nicht funktioniert
 
-  // $(function(){
   var ww = $(window).width();
   var wh = $(window).height();
 
@@ -144,15 +143,6 @@ $(function(){
     .setPin(".titleImport")
     .addTo(controller)
     .addIndicators();
-  //
-  //   new ScrollMagic.Scene ({
-  //     triggerElement: '.triggerLegende1', // the element to scroll inside
-  //     triggerHook: 'onLeave', // set trigger to top
-  //     duration: 600
-  //   })
-  //   .setPin(".legendeTriggerd")
-  //   .addTo(controller10);
-
 
 
   function drawVis() {
@@ -396,8 +386,6 @@ $(function(){
             .on("mousemove", MouseMove)
             .on("mouseout", MouseOut);
 
-
-//
 
 
 
@@ -766,239 +754,331 @@ Myanmar.append("path")
             });
 
 
-
-
-
-
-      function importZoomCountries(d){
-              var a = this;
-              var b = d;
-              d3.event.preventDefault();
-
-              // document.getElementById('titleImport').style.display = 'none';
-              // // document.getElementById('titleImport1').style.display = 'none';
-              // // document.getElementById('titleImportBreak').style.display = 'none';
-              // document.getElementById('vis').style.opacity = 0;
-              // document.getElementById('legende1').style.display = 'none';
-    					// document.getElementById('legende2').style.display = 'none';
-
-
-                g
-                // // d3.select("#vis1")
-                //   .append("id", "#vis1")
-                  .transition()
-                  .duration(1500)
-                  .ease("linear")
-                  .attr('transform', 'scale(2.2) translate(-700, -270)');
-
-                Syrien.select("path")
-                  .transition()
-                  .duration(1700)
-                  .ease("linear")
-                  .attr("transform", "scale(1)")
-                  .style('stroke', '#F6EAA4');
-
-                Syrien.select("circle")
-                  .transition()
-                  .duration(1700)
-                  .ease("linear")
-                  .attr("r", 12.5)
-                  .attr("transform", "translate(10,10) scale(0)")
-                  .style('stroke', '#F6EAA4');
-
-                Irak.select("path")
-                  .transition()
-                  .duration(1700)
-                  .ease("linear")
-                  .attr("transform", "scale(1)")
-                  .style('stroke', '#F6EAA4');
-
-                Irak.select("circle")
-                  .transition()
-                  .duration(1700)
-                  .ease("linear")
-                  .attr("r", 1)
-                  .attr("transform", "translate(20, 20) scale(0)")
-                  .style('stroke', '#F6EAA4');
-
-                Somalia.select("path")
-                  .transition()
-                  .duration(1700)
-                  .ease("linear")
-                  .attr("transform", "scale(1)")
-                  .style('stroke', '#F6EAA4');
-
-                Somalia.select("circle")
-                  .transition()
-                  .duration(1700)
-                  .ease("linear")
-                  .attr("r", 1)
-                  .attr("transform", "translate(20, 20) scale(0)")
-                  .style('stroke', '#F6EAA4');
-
-                Eritrea.select("path")
-                  .transition()
-                  .duration(1700)
-                  .ease("linear")
-                  .attr("transform", "scale(1)")
-                  .style('stroke', '#F6EAA4');
-
-                Eritrea.select("circle")
-                  .transition()
-                  .duration(1700)
-                  .ease("linear")
-                  .attr("r", 1)
-                  .attr("transform", "translate(20, 20) scale(0)")
-                  .style('stroke', '#F6EAA4');
-
-                Sudan.select("path")
-                  .transition()
-                  .duration(1700)
-                  .ease("linear")
-                  .attr("transform", "scale(1)")
-                  .style('stroke', '#F6EAA4');
-
-                Sudan.select("circle")
-                  .transition()
-                  .duration(1700)
-                  .ease("linear")
-                  .attr("r", 1)
-                  .attr("transform", "translate(20, 20) scale(0)")
-                  .style('stroke', '#F6EAA4');
-
-                Southsudan.select("path")
-                  .transition()
-                  .duration(1700)
-                  .ease("linear")
-                  .attr("transform", "scale(1)")
-                  .style('stroke', '#F6EAA4');
-
-                Southsudan.select("circle")
-                  .transition()
-                  .duration(1700)
-                  .ease("linear")
-                  .attr("r", 1)
-                  .attr("transform", "translate(20, 20) scale(0)")
-                  .style('stroke', '#F6EAA4');
-
-                ZentralafrikanischeRepublik.select("path")
-                  .transition()
-                  .duration(1700)
-                  .ease("linear")
-                  .attr("transform", "scale(1)")
-                  .style('stroke', '#F6EAA4');
-
-                ZentralafrikanischeRepublik.select("circle")
-                  .transition()
-                  .duration(1700)
-                  .ease("linear")
-                  .attr("r", 1)
-                  .attr("transform", "translate(20, 20) scale(0)")
-                  .style('stroke', '#F6EAA4');
-
-                Congo.select("path")
-                  .transition()
-                  .duration(1700)
-                  .ease("linear")
-                  .attr("transform", "scale(1)")
-                  .style('stroke', '#F6EAA4');
-
-                Congo.select("circle")
-                  .transition()
-                  .duration(1700)
-                  .ease("linear")
-                  .attr("r", 1)
-                  .attr("transform", "translate(20, 20) scale(0)")
-                  .style('stroke', '#F6EAA4');
-
-                Afghanistan.select("path")
-                  .transition()
-                  .duration(1700)
-                  .ease("linear")
-                  .attr("transform", "scale(1)")
-                  .style('stroke', '#F6EAA4');
-
-                Afghanistan.select("circle")
-                  .transition()
-                  .duration(1700)
-                  .ease("linear")
-                  .attr("r", 1)
-                  .attr("transform", "translate(20, 20) scale(0)")
-                  .style('stroke', '#F6EAA4');
-
-                Myanmar.select("path")
-                  .transition()
-                  .duration(1700)
-                  .ease("linear")
-                  .attr("transform", "scale(1)")
-                  .style('stroke', '#F6EAA4');
-
-                Myanmar.select("circle")
-                  .transition()
-                  .duration(1700)
-                  .ease("linear")
-                  .attr("r", 1)
-                  .attr("transform", "translate(20, 20) scale(0)")
-                  .style('stroke', '#F6EAA4');
-
-
-                }
-
-                // function click(o){
-                //   var n = this;
-                //   var m = o;
-                //   d3.event.preventDefault();
-                //
-                //   document.getElementById('titleImport').style.display = 'block';
-                //   document.getElementById('titleImport1').style.display = 'block';
-                //   document.getElementById('titleImportBreak').style.display = 'block';
-                //   document.getElementById('vis').style.opacity = 1;
-                //   document.getElementById('legende').style.display = 'block';
-                // }
-
-
         function importZoom() {
-          d3.selectAll('#vis1')
-              .transition()
-                .duration(50)
-                .ease('linear')
-                .style('opacity', 1);
+
+          g
+            .transition()
+            .duration(1500)
+            .ease("linear")
+            .attr('transform', 'scale(2.2) translate(-700, -270)');
+
+          Syrien.select("path")
+            .transition()
+            .duration(1700)
+            .ease("linear")
+            .attr("transform", "scale(1)")
+            .style('stroke', '#F6EAA4');
+
+          Syrien.select("circle")
+            .transition()
+            .duration(1700)
+            .ease("linear")
+            .attr("r", 12.5)
+            .attr("transform", "translate(10,10) scale(0)")
+            .style('stroke', '#F6EAA4');
+
+          Irak.select("path")
+            .transition()
+            .duration(1700)
+            .ease("linear")
+            .attr("transform", "scale(1)")
+            .style('stroke', '#F6EAA4');
+
+          Irak.select("circle")
+            .transition()
+            .duration(1700)
+            .ease("linear")
+            .attr("r", 1)
+            .attr("transform", "translate(20, 20) scale(0)")
+            .style('stroke', '#F6EAA4');
+
+          Somalia.select("path")
+            .transition()
+            .duration(1700)
+            .ease("linear")
+            .attr("transform", "scale(1)")
+            .style('stroke', '#F6EAA4');
+
+          Somalia.select("circle")
+            .transition()
+            .duration(1700)
+            .ease("linear")
+            .attr("r", 1)
+            .attr("transform", "translate(20, 20) scale(0)")
+            .style('stroke', '#F6EAA4');
+
+          Eritrea.select("path")
+            .transition()
+            .duration(1700)
+            .ease("linear")
+            .attr("transform", "scale(1)")
+            .style('stroke', '#F6EAA4');
+
+          Eritrea.select("circle")
+            .transition()
+            .duration(1700)
+            .ease("linear")
+            .attr("r", 1)
+            .attr("transform", "translate(20, 20) scale(0)")
+            .style('stroke', '#F6EAA4');
+
+          Sudan.select("path")
+            .transition()
+            .duration(1700)
+            .ease("linear")
+            .attr("transform", "scale(1)")
+            .style('stroke', '#F6EAA4');
+
+          Sudan.select("circle")
+            .transition()
+            .duration(1700)
+            .ease("linear")
+            .attr("r", 1)
+            .attr("transform", "translate(20, 20) scale(0)")
+            .style('stroke', '#F6EAA4');
+
+          Southsudan.select("path")
+            .transition()
+            .duration(1700)
+            .ease("linear")
+            .attr("transform", "scale(1)")
+            .style('stroke', '#F6EAA4');
+
+          Southsudan.select("circle")
+            .transition()
+            .duration(1700)
+            .ease("linear")
+            .attr("r", 1)
+            .attr("transform", "translate(20, 20) scale(0)")
+            .style('stroke', '#F6EAA4');
+
+          ZentralafrikanischeRepublik.select("path")
+            .transition()
+            .duration(1700)
+            .ease("linear")
+            .attr("transform", "scale(1)")
+            .style('stroke', '#F6EAA4');
+
+          ZentralafrikanischeRepublik.select("circle")
+            .transition()
+            .duration(1700)
+            .ease("linear")
+            .attr("r", 1)
+            .attr("transform", "translate(20, 20) scale(0)")
+            .style('stroke', '#F6EAA4');
+
+          Congo.select("path")
+            .transition()
+            .duration(1700)
+            .ease("linear")
+            .attr("transform", "scale(1)")
+            .style('stroke', '#F6EAA4');
+
+          Congo.select("circle")
+            .transition()
+            .duration(1700)
+            .ease("linear")
+            .attr("r", 1)
+            .attr("transform", "translate(20, 20) scale(0)")
+            .style('stroke', '#F6EAA4');
+
+          Afghanistan.select("path")
+            .transition()
+            .duration(1700)
+            .ease("linear")
+            .attr("transform", "scale(1)")
+            .style('stroke', '#F6EAA4');
+
+          Afghanistan.select("circle")
+            .transition()
+            .duration(1700)
+            .ease("linear")
+            .attr("r", 1)
+            .attr("transform", "translate(20, 20) scale(0)")
+            .style('stroke', '#F6EAA4');
+
+          Myanmar.select("path")
+            .transition()
+            .duration(1700)
+            .ease("linear")
+            .attr("transform", "scale(1)")
+            .style('stroke', '#F6EAA4');
+
+          Myanmar.select("circle")
+            .transition()
+            .duration(1700)
+            .ease("linear")
+            .attr("r", 1)
+            .attr("transform", "translate(20, 20) scale(0)")
+            .style('stroke', '#F6EAA4');
         }
 
-        function hideimportZoom() {
-          d3.selectAll('#vis1')
-               .transition()
-                 .duration(50)
-                 .ease('linear')
-                 .style('opacity', 0);
+      function hideimportZoom() {
+
+        g
+          .transition()
+          .duration(1500)
+          .ease("linear")
+          .attr('transform', 'scale(1)');
+
+        Syrien.select("path")
+          .transition()
+          .duration(1700)
+          .ease("linear")
+          .attr("transform", "scale(0)")
+          .style('stroke', '#F6EAA4');
+
+
+        Irak.select("path")
+          .transition()
+          .duration(1700)
+          .ease("linear")
+          .attr("transform", "scale(0)")
+          .style('stroke', '#F6EAA4');
+
+        Somalia.select("path")
+          .transition()
+          .duration(1700)
+          .ease("linear")
+          .attr("transform", "scale(0)")
+          .style('stroke', '#F6EAA4');
+
+        Eritrea.select("path")
+          .transition()
+          .duration(1700)
+          .ease("linear")
+          .attr("transform", "scale(0)")
+          .style('stroke', '#F6EAA4');
+
+        Sudan.select("path")
+          .transition()
+          .duration(1700)
+          .ease("linear")
+          .attr("transform", "scale(0)")
+          .style('stroke', '#F6EAA4');
+
+        Southsudan.select("path")
+          .transition()
+          .duration(1700)
+          .ease("linear")
+          .attr("transform", "scale(0)")
+          .style('stroke', '#F6EAA4');
+
+        ZentralafrikanischeRepublik.select("path")
+          .transition()
+          .duration(1700)
+          .ease("linear")
+          .attr("transform", "scale(0)")
+          .style('stroke', '#F6EAA4');
+
+        Congo.select("path")
+          .transition()
+          .duration(1700)
+          .ease("linear")
+          .attr("transform", "scale(0)")
+          .style('stroke', '#F6EAA4');
+
+        Afghanistan.select("path")
+          .transition()
+          .duration(1700)
+          .ease("linear")
+          .attr("transform", "scale(0)")
+          .style('stroke', '#F6EAA4');
+
+        Myanmar.select("path")
+          .transition()
+          .duration(1700)
+          .ease("linear")
+          .attr("transform", "scale(0)")
+          .style('stroke', '#F6EAA4');
+        }
+
+        function hideimportZoomCircles() {
+
+          Syrien.select("circle")
+          .transition()
+          .duration(1700)
+          .ease("linear")
+          .attr("r", 30)
+          .attr("transform", "translate(10,10)")
+          .style('stroke', '#ED1C24');
+
+          Irak.select("circle")
+            .transition()
+            .duration(1700)
+            .ease("linear")
+            .attr("r", 7)
+            .attr("transform", "translate(20, 20)")
+            .style('stroke', '#ED1C24');
+
+          Somalia.select("circle")
+            .transition()
+            .duration(1700)
+            .ease("linear")
+            .attr("r", 12)
+            .attr("transform", "translate(20, 20)")
+            .style('stroke', '#ED1C24');
+
+          Eritrea.select("circle")
+            .transition()
+            .duration(1700)
+            .ease("linear")
+            .attr("r", 7)
+            .attr("transform", "translate(20, 20)")
+            .style('stroke', '#ED1C24');
+
+          Sudan.select("circle")
+            .transition()
+            .duration(1700)
+            .ease("linear")
+            .attr("r", 9)
+            .attr("transform", "translate(20, 20)")
+            .style('stroke', '#ED1C24');
+
+          Southsudan.select("circle")
+            .transition()
+            .duration(1700)
+            .ease("linear")
+            .attr("r", 9)
+            .attr("transform", "translate(20, 20)")
+            .style('stroke', '#ED1C24');
+
+          ZentralafrikanischeRepublik.select("circle")
+            .transition()
+            .duration(1700)
+            .ease("linear")
+            .attr("r", 7.5)
+            .attr("transform", "translate(20, 20)")
+            .style('stroke', '#ED1C24');
+
+          Congo.select("circle")
+            .transition()
+            .duration(1700)
+            .ease("linear")
+            .attr("r", 8)
+            .attr("transform", "translate(20, 20)")
+            .style('stroke', '#ED1C24');
+
+          Afghanistan.select("circle")
+            .transition()
+            .duration(1700)
+            .ease("linear")
+            .attr("r", 22)
+            .attr("transform", "translate(20, 20)")
+            .style('stroke', '#ED1C24');
+
+          Myanmar.select("circle")
+            .transition()
+            .duration(1700)
+            .ease("linear")
+            .attr("r", 8)
+            .attr('transform', 'translate(24,45)')
+            .style('fill', '#ED1C24')
+            .style('stroke', '#ED1C24');
+
         }
 
         hideimportZoom();
-
-        // new ScrollMagic.Scene({
-        //     triggerElement: '.triggerImportZoom', // the element to scroll inside
-        //     triggerHook: 'onLeave', // set trigger to top
-        //     duration: 20
-        //   })
-        //   .addTo(controller)
-        //  .addIndicators()
-        //   .on("progress", function (j) {
-        //     if(j.progress > 0) {
-        //       importZoom();
-        //       // document.getElementById('clickText').style.display = 'none';
-        //       // document.getElementById('vis').style.opacity = 0;
-        //     }
-        //     else {
-        //       hideimportZoom();
-        //       document.getElementById('titleImport').style.display = 'block';
-        //       // document.getElementById('titleImport1').style.display = 'block';
-        //       // document.getElementById('titleImportBreak').style.display = 'block';
-        //       document.getElementById('vis').style.opacity = 1;
-        //       // document.getElementById('legende').style.display = 'block';
-        //
-        //     }
-        //   });
-
 
           var scene = new ScrollMagic.Scene({
             triggerElement: ".triggerImportZoom",
@@ -1007,12 +1087,18 @@ Myanmar.append("path")
           })
   					.addTo(controller)
   					.addIndicators() // add indicators (requires plugin)
-  					.on("start", function (e) {
-              if(e.scollDirection == "FORWARD") {
-                importZoom();
+              .on("progress", function (e) {
+                if(e.progress > 0) {
+              importZoom();
+                document.getElementById('titleImport').style.display = 'none';
+                document.getElementById('legende1').style.display = 'none';
+                document.getElementById('legende2').style.display = 'none';
               } else {
                 hideimportZoom();
-                // document.getElementById('vis').style.display = 'block';
+                hideimportZoomCircles();
+                document.getElementById('titleImport').style.display = 'block';
+                document.getElementById('legende1').style.display = 'block';
+                document.getElementById('legende2').style.display = 'block';
               }
   					});
 
