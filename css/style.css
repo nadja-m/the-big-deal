@@ -285,7 +285,6 @@ h5{
   opacity: 0;
 }
 
-
 .tooltip, .tooltip_2, .refugees{
   position: absolute;
   font-family: "lft_eticabold";
@@ -469,7 +468,7 @@ z-index: 3;
 
 .refugee_icon{
   width: 2.188em;
-  margin-top: 8.75%;
+  margin-top: 27%;
   margin-left: 50%;
 }
 
