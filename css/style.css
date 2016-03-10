@@ -459,6 +459,7 @@ z-index: 3;
 
 }
 
+
 .armsImg{
   width: 100%;
   /*margin-top: -25em;*/
@@ -468,8 +469,8 @@ z-index: 3;
 
 .refugee_icon{
   width: 2.188em;
-  margin-top: 27%;
-  margin-left: 50%;
+  padding-top: 24.4em;
+  margin-left: 49.9%;
 }
 
 .circles {
