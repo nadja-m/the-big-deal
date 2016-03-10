@@ -171,13 +171,6 @@ p, .sources {
   padding-top: 20%;
 }
 
-/*h1{
-  font-family: "lft_eticaregular";
-  text-transform: uppercase;
-  font-size: 4em;
-  margin-left: 1em;
-}*/
-
 h2, h3, h4, h5{
   font-family: "lft_eticabold";
   text-transform: uppercase;
@@ -496,4 +489,14 @@ z-index: 3;
 
 .ak47_7 {
   top: 0;
+}
+
+
+/* Info Site */
+.arrow{
+ margin: 2.5em;
+}
+
+.arrow:hover{
+ opacity: 0.5;
 }
