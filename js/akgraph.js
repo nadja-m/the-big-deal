@@ -1,15 +1,16 @@
 $(function() {
 
-  $('.export2').click(function(e){
-    e.preventDefault()
-    $('body').width($('body').width());
-    $('body').css('overflow', 'hidden');
-    $('.export2').css('display', 'block');
-  })
-  $('#xButton').click(function(e){
-      e.preventDefault()
-      $('body, .export2').removeAttr('style')
-  });
+  // $('.export2').click(function(e){
+  //   e.preventDefault()
+  //   $('body').width($('body').width());
+  //   $('body').css('overflow', 'hidden');
+  //   $('.export2').css('display', 'block');
+  // })
+  // $('#xButton').click(function(e){
+  //     e.preventDefault()
+  //     $('body, .export2').removeAttr('style')
+  // });
+
 
   document.getElementById('titleExport2').style.display = 'block';
 
@@ -21,12 +22,12 @@ $(function() {
       .style("opacity", 1);
   }
 
-  function hideGraph() {
-    d3.selectAll('.section.export2')
-      .style("opacity", 0);
-  }
-
-  hideGraph();
+  // function hideGraph() {
+  //   d3.selectAll('.section.export2')
+  //     .style("opacity", 0);
+  // }
+  //
+  // hideGraph();
 
   new ScrollMagic.Scene({
     triggerElement: '.triggerExport2', // the element to scroll inside

@@ -75,7 +75,7 @@ body {
   position: absolute;
   /*padding-top:3.125em;*/
   margin: 60% 0 0 85%;
-  z-index: 0;
+  z-index: 10;
 }
 
 
