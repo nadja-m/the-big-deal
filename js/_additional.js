@@ -60,38 +60,38 @@
 //           return tooltip.style("visibility", "hidden");
 //         }
 //
-//   importPath("img/world_map_nadja.svg", function(path){
-//     worldMap = path;
-//
-//   importPath("img/syria_border.svg", function(path){
-//     syriaCountry = path;
-//
-//   importPath("img/irak_border.svg", function(path){
-//     irakCountry = path;
-//
-//   importPath("img/somalia_border.svg", function(path){
-//     somaliaCountry = path;
-//
-//   importPath("img/eritrea_border.svg", function(path){
-//     eritreaCountry = path;
-//
-//   importPath("img/sudan_border.svg", function(path){
-//     sudanCountry = path;
-//
-//   importPath("img/southsudan_border.svg", function(path){
-//     southsudanCountry = path;
-//
-//   importPath("img/zentralafrikanischeRepublik_border.svg", function(path){
-//     zentralafrikanischeRepublikCountry = path;
-//
-//   importPath("img/congo_border.svg", function(path){
-//     congoCountry = path;
-//
-//   importPath("img/afghanistan_border.svg", function(path){
-//     afghanistanCountry = path;
-//
-//   importPath("img/myanmar_border.svg", function(path){
-//     myanmarCountry = path;
+  // importPath("img/world_map_nadja.svg", function(path){
+  //   worldMap = path;
+  //
+  // importPath("img/syria_border.svg", function(path){
+  //   syriaCountry = path;
+  //
+  // importPath("img/irak_border.svg", function(path){
+  //   irakCountry = path;
+  //
+  // importPath("img/somalia_border.svg", function(path){
+  //   somaliaCountry = path;
+  //
+  // importPath("img/eritrea_border.svg", function(path){
+  //   eritreaCountry = path;
+  //
+  // importPath("img/sudan_border.svg", function(path){
+  //   sudanCountry = path;
+  //
+  // importPath("img/southsudan_border.svg", function(path){
+  //   southsudanCountry = path;
+  //
+  // importPath("img/zentralafrikanischeRepublik_border.svg", function(path){
+  //   zentralafrikanischeRepublikCountry = path;
+  //
+  // importPath("img/congo_border.svg", function(path){
+  //   congoCountry = path;
+  //
+  // importPath("img/afghanistan_border.svg", function(path){
+  //   afghanistanCountry = path;
+  //
+  // importPath("img/myanmar_border.svg", function(path){
+  //   myanmarCountry = path;
 //
 // // Gruppe Import Länder
 //   importPath("img/import_usa.svg", function(path){
