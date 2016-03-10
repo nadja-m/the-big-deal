@@ -142,7 +142,7 @@ $(function(){
     })
     .setPin(".titleImport")
     .addTo(controller)
-    .addIndicators();
+    // .addIndicators();
 
 
   function drawVis() {
@@ -743,7 +743,7 @@ Myanmar.append("path")
               duration: 20
             })
             .addTo(controller)
-           .addIndicators()
+          //  .addIndicators()
             .on("progress", function (h) {
               if(h.progress > 0) {
                 showImport();
@@ -1086,7 +1086,7 @@ Myanmar.append("path")
             duration: 20
           })
   					.addTo(controller)
-  					.addIndicators() // add indicators (requires plugin)
+  					// .addIndicators() // add indicators (requires plugin)
               .on("progress", function (e) {
                 if(e.progress > 0) {
               importZoom();

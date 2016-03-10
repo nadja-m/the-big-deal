@@ -84,7 +84,7 @@ $(function(){
            duration: 20
          })
          .addTo(controller)
-         .addIndicators()
+        //  .addIndicators()
          .on("progress", function (e) {
            if(e.progress > 0) {
              dropsFall();
@@ -99,7 +99,7 @@ $(function(){
           duration: 400
         })
         .setPin(".titleExport")
-        .addIndicators()
+        // .addIndicators()
         .addTo(controller)
 });
 });

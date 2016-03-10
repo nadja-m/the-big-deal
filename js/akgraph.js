@@ -35,7 +35,7 @@ $(function() {
     duration: 20
   })
   .addTo(controller)
-  .addIndicators()
+  // .addIndicators()
   .on("progress", function (e) {
     if(e.progress > 0) {
       showGraph();
@@ -51,7 +51,7 @@ $(function() {
     duration: 700
   })
   .setPin(".titleExport2")
-  .addIndicators()
+  // .addIndicators()
   .addTo(controller)
 });
 
