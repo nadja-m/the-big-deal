@@ -285,20 +285,8 @@ h5{
   opacity: 0;
 }
 
-.tooltip_2{
-  position: absolute;
-  font-family: "lft_eticabold";
-  font-size: 0.750em;
-  text-transform: uppercase;
-  z-index: 10;
-  padding: 0.500em;
-  color: #FFF;
-  background-color: rgba(0, 0, 0, 0.8);
-  visibility: hidden;
-  cursor:help;
-}
 
-.tooltip_2, .refugees{
+.tooltip, .tooltip_2, .refugees{
   position: absolute;
   font-family: "lft_eticabold";
   font-size: 0.750em;
